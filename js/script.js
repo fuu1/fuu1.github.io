@@ -1,1 +1,5 @@
-"Just a try;";
+var wowhead_tooltips = {
+        colorlinks: true,
+        iconizelinks: true,
+        renamelinks: true,
+};
