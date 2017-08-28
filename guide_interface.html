@@ -1,0 +1,557 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="https://pingendo.github.io/templates/blank/theme.css" type="text/css">
+  <!--<script src="//wow.zamimg.com/widgets/power.js"></script>
+  <script>
+    var wowhead_tooltips = {
+      colorlinks: true,
+      iconizelinks: true,
+      renamelinks: true,
+    }
+  </script>-->
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md bg-inverse navbar-inverse">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Home
+        <br> </a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto text-white">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">News
+              <br><span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item dropdown active">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Subtlety </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="guide_basics.html">Basics</a>
+              <a class="dropdown-item" href="guide_equipment.html">Equipment</a>
+              <a class="dropdown-item" href="guide_dfa.html">Gameplay - DfA</a>
+              <a class="dropdown-item" href="guide_non_dfa.html">Gameplay - Non DfA</a>
+              <a class="dropdown-item" href="guide_interface.html">Interface</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Charts
+              <br> </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="py-4
+ section text-center bg-info">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="display-1 text-primary">Subtlety Guide</h1>
+          <h1 class="text-primary">Interface</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <p class="lead">This part covers macros, weakauras and addons.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-4
+ bg-info">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="text-primary">Macros:</h1>
+          <h3 class="">Shadowstrike Macro:</h3>
+          <p class="lead">Uses&nbsp;
+            <a href="https://www.wowhead.com/spell=173458">[Backstab]</a>&nbsp;or&nbsp;
+            <a href="https://www.wowhead.com/spell=185438">[Shadowstrike]</a>&nbsp;depending on your stance.</p>
+          <pre class="bg-inverse w-50"><code>#showtooltip Shadowstrike
+/cast [bonusbar:1] Shadowstrike;Backstab
+</code></pre>
+          <h3 class="">Shadowdance Macro:</h3>
+          <p class="lead">[stance:0] prevents you from accidently activating&nbsp;
+            <a href="https://www.wowhead.com/spell=185422">[Shadow Dance]</a>&nbsp;twice.
+            <br>/cast Shadowstrike prevent you from accidently using&nbsp;
+            <a href="https://www.wowhead.com/spell=173458">[Backstab]</a>&nbsp;after activating&nbsp;
+            <a href="https://www.wowhead.com/spell=185422">[Shadow Dance]</a>.</p>
+          <pre class="bg-inverse w-50 text-left"><code>#showtooltipp Shadow Dance
+/cast [stance:0] Shadow Dance
+/cast Shadowstrike
+</code></pre>
+          <p class="lead">You can add this 2 conditions if you want to, &nbsp;
+            <a href="https://www.wowhead.com/item=151190">[Specter of Betrayal]</a>&nbsp;or any other on use trinket is usualy lined up with&nbsp;
+            <a href="https://www.wowhead.com/spell=185422">[Shadow Dance]</a>.&nbsp;
+            <a href="https://www.wowhead.com/spell=212283">[Symbols of Death]</a>&nbsp;gets usualy used pre&nbsp;
+            <a href="https://www.wowhead.com/spell=185422">[Shadow Dance]</a>. This means this condition will never triger but would allow you to use&nbsp;
+            <a href="https://www.wowhead.com/spell=212283">[Symbols of Death]</a>&nbsp;together with&nbsp;
+            <a href="https://www.wowhead.com/spell=185422">[Shadow Dance]</a>&nbsp;during the animation.
+            <br>its still recommendet to use 2 macros in case you dont want&nbsp;
+            <a href="https://www.wowhead.com/spell=212283">[Symbols of Death]</a>&nbsp;to line up or if you dont want to use&nbsp;
+            <a href="https://www.wowhead.com/spell=185438">[Shadowstrike]</a>.</p>
+          <pre class="bg-inverse w-50 text-left"><code>/cast Symbols of Death
+/use Specter of Betrayal
+</code></pre>
+          <h3 class="">Marked for Death / Death from Above Macro:</h3>
+          <p class="lead">Uses&nbsp;
+            <a href="https://www.wowhead.com/spell=137619">[Marked for Death]</a>&nbsp;or&nbsp;
+            <a href="https://www.wowhead.com/spell=152150">[Death from Above]</a>&nbsp;depending on what Talent is used.</p>
+          <pre class="bg-inverse text-left w-75"><code>#showtooltip
+/cast [talent:7/2] Marked for Death; [talent:7/3] Death from Above
+</code></pre>
+          <p class="lead">Same but with mouseover for&nbsp;
+            <a href="https://www.wowhead.com/spell=137619">[Marked for Death]</a>.</p>
+          <pre class="bg-inverse text-left w-75"><code>#showtooltip
+/cast [@Target,talent:7/3] Death from Above; [@mouseover,exists,harm,talent:7/2][@Target,talent:7/2] Marked for Death
+</code></pre>
+          <h3 class="">Vanish Macros:</h3>
+          <p class="lead">My personal version of the macro, prevents you from accidently using Vanish when out of combat.</p>
+          <pre class="bg-inverse text-left w-75"><code>#showtooltipp Vanish
+/cast [nocombat] Stealth
+/cast [combat] Vanish
+/cast Shadowstrike
+/stopattack
+</code></pre>
+          <p class="lead">Usual Vanish Macro to abuse the bug.&nbsp;
+            <br>Keep in mind that its required to press the key more then once for the bug.</p>
+          <pre class="bg-inverse text-left w-75"><code>#showtooltipp 
+/cast Vanish
+/cast Shadowstrike
+/stopattack
+</code></pre>
+          <p class="lead">The same can be achived with the abve macro but its more reliable this way.
+            <br>Just spamm the macro and start using(spamming)&nbsp;
+            <a href="https://www.wowhead.com/spell=185422">[Shadow Dance]</a>&nbsp;when you start to fall down in den&nbsp;
+            <a href="https://www.wowhead.com/spell=152150">[Death from Above]</a>&nbsp;animation.</p>
+          <pre class="bg-inverse text-left w-75"><code>#showtooltipp 
+/cast Vanish
+/castsequence reset=4 Shadowstrike, Death from Above
+/stopattack
+</code></pre>
+          <h3 class="">Nightblade Mouseover Macro:</h3>
+          <p class="lead">Use&nbsp;
+            <a href="https://www.wowhead.com/spell=195452">[Nightblade]</a>&nbsp;on mouseover, uses nightblade on the target if no mouseover exist.
+            <br> </p>
+          <pre class="bg-inverse text-left w-75"><code>#showtooltip
+/cast [@mouseover, exists, harm][@Target] Nightblade
+</code></pre>
+          <p class="lead">remove @target if you dont want the macro to only work on mouseover.</p>
+          <h3 class="">Shadowstep Mouseover Macro:</h3>
+          <p class="lead">Its often quite nice to have the option to&nbsp;
+            <a href="https://www.wowhead.com/spell=36563">[Shadowstep]</a>&nbsp;a target via mouseover during a fight.</p>
+          <pre class="bg-inverse text-left w-75"><code>#showtooltip
+/cast [@mouseover, exists][@Target] Shadowstep
+</code></pre>
+          <h3 class="">Archmage Vargoths - Shadowstep Macro:</h3>
+          <p class="lead">First use places Archmage Vargoths image on the ground. Secound uses&nbsp;
+            <a href="https://www.wowhead.com/spell=36563">[Shadowstep]</a>&nbsp;on the Image.
+            <br>This can be used tactical during raids or mythic plus.</p>
+          <pre class="bg-inverse text-left w-75"><code>#showtooltip  Archmage Vargoth's Spare Staff
+/use Archmage Vargoth's Spare Staff
+/cleartarget
+/target Image of Archmage Vargoth
+/cast Shadowstep
+</code></pre>
+          <h3 class="">Itemslot Use Macro:
+            <br> </h3>
+          <p class="lead">Uses the Itemslot, can be used for Trinkets, Rings or Engineering Enchants.
+            <br> </p>
+          <pre class="bg-inverse text-left w-75"><code>#showtooltip 6
+/use 6
+</code></pre>
+          <p class="">Itemslots:
+            <br>&nbsp;1 - Head Slot&nbsp;
+            <br>6 - Belt Slot&nbsp;
+            <br>11 - Ring Slot 1&nbsp;
+            <br>12 - Ring Slot 2&nbsp;
+            <br>13 - Trinket Slot 1&nbsp;
+            <br>14 - Trinket Slot 2&nbsp;
+            <br>15 - Back Slot </p>
+          <h3 class="">Tricks of the Trade Macro:</h3>
+          <p class="lead">
+            <a href="https://www.wowhead.com/spell=57934">[Tricks of the Trade]</a>&nbsp;on the Main tank.</p>
+          <pre class="bg-inverse text-left w-75"><code>#showtooltip Tricks of the Trade
+/cast [target=Tankname] Tricks of the Trade
+</code></pre> </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-5 bg-info">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="text-primary">Weakauras:</h1>
+          <p class="lead">Those are the Weakauras and Weakaura sets i find usefull:
+            <br>
+            <br> </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 text-right">
+          <h3 class="text-primary">
+            <a href="https://wago.io/VJMtYLlrG">ShadowTechniques Counter</a>
+          </h3>
+          <p class="">Numberal counter that helps you predict the&nbsp;
+            <a href="https://www.wowhead.com/spell=196912">[Shadow Techniques]</a>&nbsp;Procs.</p>
+        </div>
+        <div class="col-md-6"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <img class="img-fluid d-block float-right" src="https://media.wago.io/screenshots/NyFFoF1mQ/1497799901194-storm.png"> </div>
+        <div class="col-md-6 text-left">
+          <h3 class="text-primary">
+            <a href="https://wago.io/NyFFoF1mQ">Shurikenstorm targets / Shuriken Combo display</a>
+          </h3>
+          <p class="">Displays the number of targets and shuriken combo stacks. </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 text-right">
+          <h3 class="text-primary">
+            <a href="https://wago.io/VJWn23ACM">Rogue - Color Coded Range Display</a>
+          </h3>
+          <p class="">Helps you to manage/see ranges.</p>
+        </div>
+        <div class="col-md-6">
+          <img class="img-fluid d-block float-left w-25" src="https://media.wago.io/screenshots/VJWn23ACM/1493980837133-Unbenannt-6.png"> </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <img class="img-fluid d-block float-right w-25" src="https://media.wago.io/screenshots/NJkH7IB1X/1493984424219-Unbenannt-3.png"> </div>
+        <div class="col-md-6">
+          <h3 class="text-primary">
+            <a href="https://wago.io/NJkH7IB1X">Shadowdance Charges for the Personal Ressource Frame</a>
+          </h3>
+          <p class="">Showes&nbsp;
+            <a href="https://www.wowhead.com/spell=185422">[Shadow Dance]</a>&nbsp;charges/cooldown as a visual bar.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <h3 class="text-primary text-right">
+            <a href="https://wago.io/N1WsM9kQ7">Fuu's Nameplate HUD</a>
+          </h3>
+          <p class="text-right">All in one HuD for the Nameplate.</p>
+        </div>
+        <div class="col-md-6">
+          <img class="img-fluid d-block w-50 float-left" src="https://media.wago.io/screenshots/N1WsM9kQ7/1497801809507-WoWScrnShot_061817_175019.jpg"> </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <img class="img-fluid d-block w-50 float-right" src="http://i.imgur.com/WYxxpqB.png"> </div>
+        <div class="col-md-6">
+          <h3 class="text-left">
+            <a href="https://wago.io/VycrCRgpb">Mystlers Weakauras HUD</a>
+          </h3>
+          <p class="text-left">All in one Weakauras set from Mystler</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <h3 class="text-right text-primary">
+            <a href="https://wago.io/Subtlety">Potato's Weakauras HUD</a>
+          </h3>
+          <p class="text-right">All in one Weakauras set from Potato</p>
+        </div>
+        <div class="col-md-6">
+          <img class="img-fluid d-block float-left" src="http://i.imgur.com/XrNfiD7.jpg"> </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <img class="img-fluid d-block float-right w-50" src="https://media.wago.io/screenshots/NJWfOgYhG/1501978216015-Screen%20Shot%202017-08-05%20at%208.09.00%20PM.png"> </div>
+        <div class="col-md-6">
+          <h3 class="">
+            <a href="https://wago.io/NJWfOgYhG">Emarline's Weakauras HUD</a>
+          </h3>
+          <p class="">All in one Weakauras set from Emarline</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 text-right">
+          <h3 class="">
+            <a href="https://wago.io/VkcUyO8t-">Ipse's Weakaura HUD</a>
+          </h3>
+          <p class="">Allin one Weakauras set from Ipse</p>
+        </div>
+        <div class="col-md-6">
+          <img class="img-fluid d-block float-left w-25" src="http://i.imgur.com/363g8L6.png"> </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-5 bg-info">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="text-primary">Addons:</h1>
+          <p class="lead">Addons became the highest quality of life changes that we can get. There are thousends of diffrent addons for every thinkable purpose. Here is a list of addons that might be worth taking a look at:</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <table class="table">
+            <thead>
+              <tr>
+                <th class="text-white">Addon</th>
+                <th class="text-white">Discription</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="text-white">
+                  <u>Rotation helper:</u>
+                </td>
+                <td class="text-white"></td>
+              </tr>
+              <tr> </tr>
+              <tr>
+                <td>
+                  <a href="https://mods.curse.com/addons/wow/aethysrotation">Aethys Rotation</a>
+                </td>
+                <td class="text-white">Rotation helper that assists you in optimizing your gameplay</td>
+              </tr>
+              <tr> </tr>
+              <tr>
+                <td class="text-white">
+                  <u>Buff Tracking:</u>
+                </td>
+                <td class="text-white"></td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="https://mods.curse.com/addons/wow/tellmewhen">Tellmewhen</a>
+                </td>
+                <td class="text-white">Alternative to Weakauras that uses abit less ressources.</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="https://mods.curse.com/addons/wow/weakauras-2">Weakauras</a>
+                </td>
+                <td class="text-white">Commonly used addon for buff/debuff tracking and more.</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="https://mods.curse.com/addons/wow/aura-frames">Aura Frames</a>
+                </td>
+                <td class="text-white">CPU friendly alternative to tellmewhen and weakauras.</td>
+              </tr>
+              <tr>
+                <td class="text-white">
+                  <u>Damage Meter:</u>
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="https://mods.curse.com/addons/wow/skada">Skada</a>
+                </td>
+                <td class="text-white">Commonly used Damage Meter. Is a solid choice.</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="https://mods.curse.com/addons/wow/details">Details</a>
+                </td>
+                <td class="text-white">Feautuere ritch Damage Meter thats relative new but already the best choice.</td>
+              </tr>
+              <tr>
+                <td class="text-white">
+                  <u>Nameplates:</u>
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="https://mods.curse.com/addons/wow/plater-nameplates">Plater Nameplates</a>
+                </td>
+                <td class="text-white">Alternative Nameplate addon.</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="https://mods.curse.com/addons/wow/kuinameplates">Kui Nameplates</a>
+                </td>
+                <td class="text-white">Go-to choice Nameplate addon.</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="http://www.wowinterface.com/downloads/fileinfo.php?s=4c6664e74989d4c5a4005fecb471cde0&amp;id=24109">EKPlates</a>
+                </td>
+                <td class="text-white">Alternative Nameplate addon with an intressting style.</td>
+              </tr>
+              <tr>
+                <td class="text-white">
+                  <u>Raid Tools / Boss Mods:</u>
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="https://mods.curse.com/addons/wow/deadly-boss-mods">Deadly Boss Mods</a>
+                </td>
+                <td class="text-white">defualt choice for Boss timer and alerts.</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="https://mods.curse.com/addons/wow/big-wigs">Bigwigs Bossmods</a>
+                </td>
+                <td class="text-white">CPU friendly alternative to DBM.</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="https://mods.curse.com/addons/wow/exorsus-raid-tools">Exorsus Raid Tools</a>
+                </td>
+                <td class="text-white">Raid tool from one of the strongest compatitive guilds.</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="https://mods.curse.com/addons/wow/iskar-assist">Raid Assist</a>
+                </td>
+                <td class="text-white">Provides alot of features for raid organisation.</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="https://mods.curse.com/addons/wow/rclootcouncil">RCLootCouncil</a>
+                </td>
+                <td class="text-white">The best addon to organice the loot in your raid.</td>
+              </tr>
+              <tr>
+                <td class="text-white">
+                  <u>Action Bar:</u>
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="https://mods.curse.com/addons/wow/bartender4">Bartender</a>
+                </td>
+                <td class="text-white">default choice for Action bar mods.</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="https://mods.curse.com/addons/wow/dominos">Dominos</a>
+                </td>
+                <td class="text-white">Alternative Action bar mod that is more CPU friendly.</td>
+              </tr>
+              <tr>
+                <td class="text-white">
+                  <u>Unit Frame:</u>
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="https://mods.curse.com/addons/wow/shadowed-unit-frames">Shadowed Unit Frames</a>
+                </td>
+                <td class="text-white">CPU friendly and feature rich unit frame addon.</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="https://mods.curse.com/addons/wow/zperl">Z-Perl Unit Frames</a>
+                </td>
+                <td class="text-white">Popular unit frame addon.</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="https://mods.curse.com/addons/wow/grid2">Grid 2</a>
+                </td>
+                <td class="text-white">Popular and CPU friendly raid frame replacement.</td>
+              </tr>
+              <tr>
+                <td class="text-white">
+                  <u>Cast Bar</u>
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="https://mods.curse.com/addons/wow/quartz">Quartz</a>
+                </td>
+                <td class="text-white">CPU friendly Cast bar replacement.</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="https://mods.curse.com/addons/wow/gnosis">Gnosis</a>
+                </td>
+                <td class="text-white">Feature rich Cast bar replacement.</td>
+              </tr>
+              <tr>
+                <td class="text-white">
+                  <u>Combat text:</u>
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="https://mods.curse.com/addons/wow/mik-scrolling-battle-text">MSBT</a>
+                </td>
+                <td class="text-white">Default choice for Combat text display.</td>
+              </tr>
+              <tr>
+                <td class="text-white">
+                  <u>All in one:</u>
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="https://www.tukui.org/welcome.php">Elv Ui</a>
+                </td>
+                <td class="text-white">Popular Ui replacement with alot of features.</td>
+              </tr>
+              <tr>
+                <td class="text-white">
+                  <u>Others:</u>
+                </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="https://mods.curse.com/addons/wow/doomcooldownpulse">Doom Cooldown pulse</a>
+                </td>
+                <td class="text-white">Flashes an icon when a cooldown comes up.</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="https://mods.curse.com/addons/wow/trufigcd">TrufiGCD</a>
+                </td>
+                <td class="text-white">Provides a timeline for your casts. Intressting for streaming.</td>
+              </tr>
+              <tr class="text-white">
+                <td>
+                  <a href="https://mods.curse.com/addons/wow/gottagofast">Gottagofast</a>
+                </td>
+                <td>Default choice for Mythic plus timer.</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="https://mods.curse.com/addons/wow/advancedinterfaceoptions">Advanced Interface options</a>
+                </td>
+                <td class="text-white">Provides a easy to use interface to change Game Cvars.</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="https://mods.curse.com/addons/wow/garbageprotector">Garbage protector</a>
+                </td>
+                <td class="text-white">Organized the&nbsp; collectgarbage function to improve performance.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-4 bg-info">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+    <script src="https://pingendo.com/assets/bootstrap/bootstrap-4.0.0-alpha.6.min.js"></script>
+  </div>
+</body>
+
+</html>
