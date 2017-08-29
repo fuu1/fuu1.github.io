@@ -1,1 +1,14 @@
 @charset "UTF-8";
+
+.title2{
+    padding-top: 50px;
+
+}
+
+.select-box{
+    text-align: left;
+}
+
+.label-profil{
+    font-size: 22px;
+}
