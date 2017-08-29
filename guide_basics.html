@@ -1,60 +1,49 @@
 <html>
 
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
   <link rel="stylesheet" href="style/bootstrap.min.css">
   <link rel="stylesheet" href="style/screen.css">
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
-  <!--<script src="//wow.zamimg.com/widgets/power.js"></script>-->
   <script src="js/script.js"></script>
   <script src="js/wowhead.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 </head>
 
 
 <body>
-<nav class="navbar navbar-expand-md bg-inverse navbar-inverse">
-  <div class="container">
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="index.html">Home</a>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
 
-    <a class="navbar-brand" href="index.html">Home</a>
-
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-      <ul class="navbar-nav mr-auto ">
-        <!--<li class="nav-item active">-->
-        <!--<a class="nav-link" href="index.html">News-->
-        <!--<br><span class="sr-only">(current)</span></a>-->
-        <!--</li>-->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Subtlety </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="guide_basics.html">Basics</a>
-            <a class="dropdown-item" href="guide_equipment.html">Equipment</a>
-            <a class="dropdown-item disabled" href="#">Dynamic Gamplay</a>
-            <a class="dropdown-item" href="guide_dfa.html">Gameplay - DfA</a>
-            <a class="dropdown-item" href="guide_non_dfa.html">Gameplay - Non DfA</a>
-            <a class="dropdown-item" href="guide_interface.html">Interface</a>
-          </div>
-        </li>
-        <li class="nav-item dissab">
-          <a class="nav-link disabled" href="#">Charts
-            <br> </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">About</a>
-        </li>
-      </ul>
-    </div>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Subtlety
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="guide_basics.html">Basics</a>
+          <a class="dropdown-item" href="guide_equipment.html">Equipment</a>
+          <a class="dropdown-item disabled" href="#">Dynamic Gamplay</a>
+          <a class="dropdown-item" href="guide_dfa.html">Gameplay - DfA</a>
+          <a class="dropdown-item" href="guide_non_dfa.html">Gameplay - Non DfA</a>
+          <a class="dropdown-item" href="guide_interface.html">Interface</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">About</a>
+      </li>
+    </ul>
   </div>
 </nav>
 
 
-  <div class="py-5 section text-center ">
+<div class="py-5 section text-center ">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
