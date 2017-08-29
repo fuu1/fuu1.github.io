@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="821aa04d-72ff-426d-86b5-ccfe30155a91" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/NewRotation.html" afterPath="$PROJECT_DIR$/NewRotation.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/script.js" afterPath="$PROJECT_DIR$/js/script.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -191,8 +190,8 @@
           <file leaf-file-name="NewRotation.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/NewRotation.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="274">
-                  <caret line="94" column="32" lean-forward="true" selection-start-line="94" selection-start-column="32" selection-end-line="94" selection-end-column="32" />
+                <state relative-caret-position="206">
+                  <caret line="65" column="20" lean-forward="true" selection-start-line="65" selection-start-column="20" selection-end-line="65" selection-end-column="20" />
                   <folding>
                     <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                   </folding>
@@ -425,12 +424,12 @@
       <updated>1503941352135</updated>
       <workItem from="1503941353244" duration="2198000" />
       <workItem from="1503991859046" duration="2206000" />
-      <workItem from="1503996070177" duration="6019000" />
+      <workItem from="1503996070177" duration="6315000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11952000" />
+    <option name="totallyTimeSpent" value="12248000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1374" y="296" width="1382" height="744" extended-state="6" />
@@ -1433,8 +1432,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/NewRotation.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="94" column="32" lean-forward="true" selection-start-line="94" selection-start-column="32" selection-end-line="94" selection-end-column="32" />
+        <state relative-caret-position="206">
+          <caret line="65" column="20" lean-forward="true" selection-start-line="65" selection-start-column="20" selection-end-line="65" selection-end-column="20" />
           <folding>
             <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
