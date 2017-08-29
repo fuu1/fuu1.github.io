@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="821aa04d-72ff-426d-86b5-ccfe30155a91" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/guide_equipment.html" afterPath="$PROJECT_DIR$/guide_equipment.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/guide_dfa.html" afterPath="$PROJECT_DIR$/guide_dfa.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -40,10 +39,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="guide_equipment.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="guide_equipment.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/guide_equipment.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="700">
+                <state relative-caret-position="5851">
                   <caret line="727" column="42" lean-forward="true" selection-start-line="727" selection-start-column="42" selection-end-line="727" selection-end-column="42" />
                   <folding>
                     <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -151,19 +150,19 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="guide_dfa.html" pinned="false" current-in-tab="false">
+          <file leaf-file-name="guide_dfa.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/guide_dfa.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="238">
-                  <caret line="96" column="14" lean-forward="true" selection-start-line="96" selection-start-column="14" selection-end-line="96" selection-end-column="14" />
+                <state relative-caret-position="578">
+                  <caret line="128" column="113" lean-forward="false" selection-start-line="128" selection-start-column="113" selection-end-line="128" selection-end-column="113" />
                   <folding>
                     <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                    <element signature="e#15567#15571#0" expanded="true" />
-                    <element signature="e#15654#15658#0" expanded="true" />
-                    <element signature="e#15783#15787#0" expanded="true" />
-                    <element signature="e#15817#15821#0" expanded="true" />
-                    <element signature="e#17412#17416#0" expanded="true" />
-                    <element signature="e#17495#17499#0" expanded="true" />
+                    <element signature="e#15573#15577#0" expanded="true" />
+                    <element signature="e#15660#15664#0" expanded="true" />
+                    <element signature="e#15789#15793#0" expanded="true" />
+                    <element signature="e#15823#15827#0" expanded="true" />
+                    <element signature="e#17418#17422#0" expanded="true" />
+                    <element signature="e#17501#17505#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -247,7 +246,6 @@
       <list>
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/js/wowhead.js" />
-        <option value="$PROJECT_DIR$/guide_dfa.html" />
         <option value="$PROJECT_DIR$/guide_basics.html" />
         <option value="$PROJECT_DIR$/guide_non_dfa.html" />
         <option value="$PROJECT_DIR$/style/screen.css" />
@@ -255,6 +253,7 @@
         <option value="$PROJECT_DIR$/NewRotation.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/guide_equipment.html" />
+        <option value="$PROJECT_DIR$/guide_dfa.html" />
       </list>
     </option>
   </component>
@@ -265,10 +264,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1374" />
-    <option name="y" value="296" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -421,15 +420,15 @@
       <updated>1503941352135</updated>
       <workItem from="1503941353244" duration="2198000" />
       <workItem from="1503991859046" duration="2206000" />
-      <workItem from="1503996070177" duration="8512000" />
+      <workItem from="1503996070177" duration="8942000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14445000" />
+    <option name="totallyTimeSpent" value="14875000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1374" y="296" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.109375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -586,12 +585,12 @@
           <caret line="8" column="35" lean-forward="true" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
           <folding>
             <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#15567#15571#0" expanded="true" />
-            <element signature="e#15654#15658#0" expanded="true" />
-            <element signature="e#15783#15787#0" expanded="true" />
-            <element signature="e#15817#15821#0" expanded="true" />
-            <element signature="e#17412#17416#0" expanded="true" />
-            <element signature="e#17495#17499#0" expanded="true" />
+            <element signature="e#15573#15577#0" expanded="true" />
+            <element signature="e#15660#15664#0" expanded="true" />
+            <element signature="e#15789#15793#0" expanded="true" />
+            <element signature="e#15823#15827#0" expanded="true" />
+            <element signature="e#17418#17422#0" expanded="true" />
+            <element signature="e#17501#17505#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -752,12 +751,12 @@
           <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding>
             <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#15567#15571#0" expanded="true" />
-            <element signature="e#15654#15658#0" expanded="true" />
-            <element signature="e#15783#15787#0" expanded="true" />
-            <element signature="e#15817#15821#0" expanded="true" />
-            <element signature="e#17412#17416#0" expanded="true" />
-            <element signature="e#17495#17499#0" expanded="true" />
+            <element signature="e#15573#15577#0" expanded="true" />
+            <element signature="e#15660#15664#0" expanded="true" />
+            <element signature="e#15789#15793#0" expanded="true" />
+            <element signature="e#15823#15827#0" expanded="true" />
+            <element signature="e#17418#17422#0" expanded="true" />
+            <element signature="e#17501#17505#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -844,12 +843,12 @@
           <caret line="121" column="10" lean-forward="false" selection-start-line="121" selection-start-column="10" selection-end-line="121" selection-end-column="10" />
           <folding>
             <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#15567#15571#0" expanded="true" />
-            <element signature="e#15654#15658#0" expanded="true" />
-            <element signature="e#15783#15787#0" expanded="true" />
-            <element signature="e#15817#15821#0" expanded="true" />
-            <element signature="e#17412#17416#0" expanded="true" />
-            <element signature="e#17495#17499#0" expanded="true" />
+            <element signature="e#15573#15577#0" expanded="true" />
+            <element signature="e#15660#15664#0" expanded="true" />
+            <element signature="e#15789#15793#0" expanded="true" />
+            <element signature="e#15823#15827#0" expanded="true" />
+            <element signature="e#17418#17422#0" expanded="true" />
+            <element signature="e#17501#17505#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -967,12 +966,12 @@
           <caret line="113" column="10" lean-forward="false" selection-start-line="113" selection-start-column="10" selection-end-line="113" selection-end-column="10" />
           <folding>
             <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#15567#15571#0" expanded="true" />
-            <element signature="e#15654#15658#0" expanded="true" />
-            <element signature="e#15783#15787#0" expanded="true" />
-            <element signature="e#15817#15821#0" expanded="true" />
-            <element signature="e#17412#17416#0" expanded="true" />
-            <element signature="e#17495#17499#0" expanded="true" />
+            <element signature="e#15573#15577#0" expanded="true" />
+            <element signature="e#15660#15664#0" expanded="true" />
+            <element signature="e#15789#15793#0" expanded="true" />
+            <element signature="e#15823#15827#0" expanded="true" />
+            <element signature="e#17418#17422#0" expanded="true" />
+            <element signature="e#17501#17505#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1189,12 +1188,12 @@
           <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding>
             <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#15567#15571#0" expanded="true" />
-            <element signature="e#15654#15658#0" expanded="true" />
-            <element signature="e#15783#15787#0" expanded="true" />
-            <element signature="e#15817#15821#0" expanded="true" />
-            <element signature="e#17412#17416#0" expanded="true" />
-            <element signature="e#17495#17499#0" expanded="true" />
+            <element signature="e#15573#15577#0" expanded="true" />
+            <element signature="e#15660#15664#0" expanded="true" />
+            <element signature="e#15789#15793#0" expanded="true" />
+            <element signature="e#15823#15827#0" expanded="true" />
+            <element signature="e#17418#17422#0" expanded="true" />
+            <element signature="e#17501#17505#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1263,22 +1262,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/guide_dfa.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="96" column="14" lean-forward="true" selection-start-line="96" selection-start-column="14" selection-end-line="96" selection-end-column="14" />
-          <folding>
-            <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#15567#15571#0" expanded="true" />
-            <element signature="e#15654#15658#0" expanded="true" />
-            <element signature="e#15783#15787#0" expanded="true" />
-            <element signature="e#15817#15821#0" expanded="true" />
-            <element signature="e#17412#17416#0" expanded="true" />
-            <element signature="e#17495#17499#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/guide_non_dfa.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -1332,7 +1315,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/guide_equipment.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="700">
+        <state relative-caret-position="5851">
           <caret line="727" column="42" lean-forward="true" selection-start-line="727" selection-start-column="42" selection-end-line="727" selection-end-column="42" />
           <folding>
             <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -1409,6 +1392,22 @@
             <element signature="e#31697#31703#0" expanded="true" />
             <element signature="e#31772#31778#0" expanded="true" />
             <element signature="e#35666#35672#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guide_dfa.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="128" column="113" lean-forward="false" selection-start-line="128" selection-start-column="113" selection-end-line="128" selection-end-column="113" />
+          <folding>
+            <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="e#15573#15577#0" expanded="true" />
+            <element signature="e#15660#15664#0" expanded="true" />
+            <element signature="e#15789#15793#0" expanded="true" />
+            <element signature="e#15823#15827#0" expanded="true" />
+            <element signature="e#17418#17422#0" expanded="true" />
+            <element signature="e#17501#17505#0" expanded="true" />
           </folding>
         </state>
       </provider>
