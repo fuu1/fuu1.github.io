@@ -2,6 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="821aa04d-72ff-426d-86b5-ccfe30155a91" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/guide_basics.html" afterPath="$PROJECT_DIR$/guide_basics.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/guide_dfa.html" afterPath="$PROJECT_DIR$/guide_dfa.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/guide_equipment.html" afterPath="$PROJECT_DIR$/guide_equipment.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/guide_interface.html" afterPath="$PROJECT_DIR$/guide_interface.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/guide_non_dfa.html" afterPath="$PROJECT_DIR$/guide_non_dfa.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/screen.css" afterPath="$PROJECT_DIR$/style/screen.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -25,11 +31,11 @@
     <splitter split-orientation="horizontal" split-proportion="0.74404764">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+          <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="272">
-                  <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="47" selection-end-column="6" />
+                  <caret line="47" column="6" lean-forward="false" selection-start-line="47" selection-start-column="6" selection-end-line="47" selection-end-column="6" />
                   <folding>
                     <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                   </folding>
@@ -52,7 +58,7 @@
           <file leaf-file-name="guide_basics.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/guide_basics.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="270">
+                <state relative-caret-position="272">
                   <caret line="47" column="6" lean-forward="false" selection-start-line="47" selection-start-column="6" selection-end-line="47" selection-end-column="6" />
                   <folding>
                     <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -85,11 +91,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="guide_interface.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="guide_interface.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/guide_interface.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="272">
-                  <caret line="47" column="6" lean-forward="false" selection-start-line="47" selection-start-column="6" selection-end-line="47" selection-end-column="6" />
+                <state relative-caret-position="223">
+                  <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="47" selection-end-column="6" />
                   <folding>
                     <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                   </folding>
@@ -114,8 +120,8 @@
           <file leaf-file-name="screen.css" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/style/screen.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="828">
-                  <caret line="110" column="1" lean-forward="false" selection-start-line="110" selection-start-column="1" selection-end-line="110" selection-end-column="1" />
+                <state relative-caret-position="879">
+                  <caret line="122" column="8" lean-forward="true" selection-start-line="122" selection-start-column="8" selection-end-line="122" selection-end-column="8" />
                   <folding>
                     <element signature="e#530#549#0" expanded="false" />
                   </folding>
@@ -144,6 +150,7 @@
       <find>talent_container</find>
       <find>&amp;nbsp;</find>
       <find>text-white</find>
+      <find>py-4</find>
     </findStrings>
     <replaceStrings>
       <replace>talent</replace>
@@ -160,13 +167,13 @@
         <option value="$PROJECT_DIR$/js/wowhead.js" />
         <option value="$PROJECT_DIR$/NewRotation.html" />
         <option value="$PROJECT_DIR$/js/script.js" />
-        <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/guide_equipment.html" />
-        <option value="$PROJECT_DIR$/guide_basics.html" />
-        <option value="$PROJECT_DIR$/guide_dfa.html" />
-        <option value="$PROJECT_DIR$/guide_non_dfa.html" />
         <option value="$PROJECT_DIR$/guide_interface.html" />
         <option value="$PROJECT_DIR$/style/screen.css" />
+        <option value="$PROJECT_DIR$/guide_non_dfa.html" />
+        <option value="$PROJECT_DIR$/guide_dfa.html" />
+        <option value="$PROJECT_DIR$/guide_basics.html" />
+        <option value="$PROJECT_DIR$/guide_equipment.html" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -328,12 +335,12 @@
       <workItem from="1503991859046" duration="2206000" />
       <workItem from="1503996070177" duration="19714000" />
       <workItem from="1504208758567" duration="1267000" />
-      <workItem from="1504214898670" duration="4217000" />
+      <workItem from="1504214898670" duration="5417000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31131000" />
+    <option name="totallyTimeSpent" value="32331000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-368" width="2064" height="1128" extended-state="6" />
@@ -759,6 +766,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -777,9 +785,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/style/screen.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
+        <state relative-caret-position="879">
+          <caret line="122" column="8" lean-forward="true" selection-start-line="122" selection-start-column="8" selection-end-line="122" selection-end-column="8" />
+          <folding>
+            <element signature="e#530#549#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/guide_interface.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
           <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="47" selection-end-column="6" />
           <folding>
             <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -787,19 +805,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/guide_equipment.html">
+    <entry file="file://$PROJECT_DIR$/guide_non_dfa.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
-          <caret line="47" column="6" lean-forward="false" selection-start-line="47" selection-start-column="6" selection-end-line="47" selection-end-column="6" />
-          <folding>
-            <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/guide_basics.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
           <caret line="47" column="6" lean-forward="false" selection-start-line="47" selection-start-column="6" selection-end-line="47" selection-end-column="6" />
           <folding>
             <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -817,7 +825,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/guide_non_dfa.html">
+    <entry file="file://$PROJECT_DIR$/guide_basics.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="47" column="6" lean-forward="false" selection-start-line="47" selection-start-column="6" selection-end-line="47" selection-end-column="6" />
@@ -827,7 +835,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/guide_interface.html">
+    <entry file="file://$PROJECT_DIR$/guide_equipment.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="47" column="6" lean-forward="false" selection-start-line="47" selection-start-column="6" selection-end-line="47" selection-end-column="6" />
@@ -837,12 +845,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/style/screen.css">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="828">
-          <caret line="110" column="1" lean-forward="false" selection-start-line="110" selection-start-column="1" selection-end-line="110" selection-end-column="1" />
+        <state relative-caret-position="272">
+          <caret line="47" column="6" lean-forward="false" selection-start-line="47" selection-start-column="6" selection-end-line="47" selection-end-column="6" />
           <folding>
-            <element signature="e#530#549#0" expanded="false" />
+            <element signature="n#nav#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>

@@ -35,8 +35,8 @@
           <li><a class="dropdown-item" href="guide_interface.html">Interface</a></li>
           <li role="separator" class="divider"></li>
           <li class="dropdown-header">In-Depth mecanics</li>
-          <li><a class="dropdown-item disabled" href="#">Extra legendary insite</a> </li>
-          <li><a class="dropdown-item disabled" href="#">Shadow Technique</a></li>
+          <li><a class="dropdown-item disabled crossed" href="#">Extra legendary insite</a> </li>
+          <li><a class="dropdown-item disabled crossed" href="#">Shadow Technique</a></li>
         </ul>
       </li>
 
@@ -69,43 +69,43 @@
         <div class="col-md-12">
           <h1 class="text-primary">Macros:</h1>
           <h3 class="">Shadowstrike Macro:</h3>
-          <p class="lead">Uses 
-            <a href="https://www.wowhead.com/spell=173458">[Backstab]</a> or 
+          <p class="lead">Uses
+            <a href="https://www.wowhead.com/spell=173458">[Backstab]</a> or
             <a href="https://www.wowhead.com/spell=185438">[Shadowstrike]</a> depending on your stance.</p>
           <pre class="bg-inverse w-50"><code>#showtooltip Shadowstrike
 /cast [bonusbar:1] Shadowstrike;Backstab
 </code></pre>
           <h3 class="">Shadowdance Macro:</h3>
-          <p class="lead">[stance:0] prevents you from accidently activating 
+          <p class="lead">[stance:0] prevents you from accidently activating
             <a href="https://www.wowhead.com/spell=185422">[Shadow Dance]</a> twice.
-            <br>/cast Shadowstrike prevent you from accidently using 
-            <a href="https://www.wowhead.com/spell=173458">[Backstab]</a> after activating 
+            <br>/cast Shadowstrike prevent you from accidently using
+            <a href="https://www.wowhead.com/spell=173458">[Backstab]</a> after activating
             <a href="https://www.wowhead.com/spell=185422">[Shadow Dance]</a>.</p>
           <pre class="bg-inverse w-50 text-left"><code>#showtooltipp Shadow Dance
 /cast [stance:0] Shadow Dance
 /cast Shadowstrike
 </code></pre>
-          <p class="lead">You can add this 2 conditions if you want to,  
-            <a href="https://www.wowhead.com/item=151190">[Specter of Betrayal]</a> or any other on use trinket is usualy lined up with 
-            <a href="https://www.wowhead.com/spell=185422">[Shadow Dance]</a>. 
-            <a href="https://www.wowhead.com/spell=212283">[Symbols of Death]</a> gets usualy used pre 
-            <a href="https://www.wowhead.com/spell=185422">[Shadow Dance]</a>. This means this condition will never triger but would allow you to use 
-            <a href="https://www.wowhead.com/spell=212283">[Symbols of Death]</a> together with 
+          <p class="lead">You can add this 2 conditions if you want to,
+            <a href="https://www.wowhead.com/item=151190">[Specter of Betrayal]</a> or any other on use trinket is usualy lined up with
+            <a href="https://www.wowhead.com/spell=185422">[Shadow Dance]</a>.
+            <a href="https://www.wowhead.com/spell=212283">[Symbols of Death]</a> gets usualy used pre
+            <a href="https://www.wowhead.com/spell=185422">[Shadow Dance]</a>. This means this condition will never triger but would allow you to use
+            <a href="https://www.wowhead.com/spell=212283">[Symbols of Death]</a> together with
             <a href="https://www.wowhead.com/spell=185422">[Shadow Dance]</a> during the animation.
-            <br>its still recommendet to use 2 macros in case you dont want 
-            <a href="https://www.wowhead.com/spell=212283">[Symbols of Death]</a> to line up or if you dont want to use 
+            <br>its still recommendet to use 2 macros in case you dont want
+            <a href="https://www.wowhead.com/spell=212283">[Symbols of Death]</a> to line up or if you dont want to use
             <a href="https://www.wowhead.com/spell=185438">[Shadowstrike]</a>.</p>
           <pre class="bg-inverse w-50 text-left"><code>/cast Symbols of Death
 /use Specter of Betrayal
 </code></pre>
           <h3 class="">Marked for Death / Death from Above Macro:</h3>
-          <p class="lead">Uses 
-            <a href="https://www.wowhead.com/spell=137619">[Marked for Death]</a> or 
+          <p class="lead">Uses
+            <a href="https://www.wowhead.com/spell=137619">[Marked for Death]</a> or
             <a href="https://www.wowhead.com/spell=152150">[Death from Above]</a> depending on what Talent is used.</p>
           <pre class="bg-inverse text-left w-75"><code>#showtooltip
 /cast [talent:7/2] Marked for Death; [talent:7/3] Death from Above
 </code></pre>
-          <p class="lead">Same but with mouseover for 
+          <p class="lead">Same but with mouseover for
             <a href="https://www.wowhead.com/spell=137619">[Marked for Death]</a>.</p>
           <pre class="bg-inverse text-left w-75"><code>#showtooltip
 /cast [@Target,talent:7/3] Death from Above; [@mouseover,exists,harm,talent:7/2][@Target,talent:7/2] Marked for Death
@@ -117,7 +117,7 @@
 /cast [combat] Vanish
 </code></pre>
           <h3 class="">Nightblade Mouseover Macro:</h3>
-          <p class="lead">Use 
+          <p class="lead">Use
             <a href="https://www.wowhead.com/spell=195452">[Nightblade]</a> on mouseover, uses nightblade on the target if no mouseover exist.
             <br> </p>
           <pre class="bg-inverse text-left w-75"><code>#showtooltip
@@ -125,13 +125,13 @@
 </code></pre>
           <p class="lead">remove @target if you dont want the macro to only work on mouseover.</p>
           <h3 class="">Shadowstep Mouseover Macro:</h3>
-          <p class="lead">Its often quite nice to have the option to 
+          <p class="lead">Its often quite nice to have the option to
             <a href="https://www.wowhead.com/spell=36563">[Shadowstep]</a> a target via mouseover during a fight.</p>
           <pre class="bg-inverse text-left w-75"><code>#showtooltip
 /cast [@mouseover, exists][@Target] Shadowstep
 </code></pre>
           <h3 class="">Archmage Vargoths - Shadowstep Macro:</h3>
-          <p class="lead">First use places Archmage Vargoths image on the ground. Secound uses 
+          <p class="lead">First use places Archmage Vargoths image on the ground. Secound uses
             <a href="https://www.wowhead.com/spell=36563">[Shadowstep]</a> on the Image.
             <br>This can be used tactical during raids or mythic plus.</p>
           <pre class="bg-inverse text-left w-75"><code>#showtooltip  Archmage Vargoth's Spare Staff
@@ -148,12 +148,12 @@
 /use 6
 </code></pre>
           <p class="">Itemslots:
-            <br> 1 - Head Slot 
-            <br>6 - Belt Slot 
-            <br>11 - Ring Slot 1 
-            <br>12 - Ring Slot 2 
-            <br>13 - Trinket Slot 1 
-            <br>14 - Trinket Slot 2 
+            <br> 1 - Head Slot
+            <br>6 - Belt Slot
+            <br>11 - Ring Slot 1
+            <br>12 - Ring Slot 2
+            <br>13 - Trinket Slot 1
+            <br>14 - Trinket Slot 2
             <br>15 - Back Slot </p>
           <h3 class="">Tricks of the Trade Macro:</h3>
           <p class="lead">
@@ -179,7 +179,7 @@
           <h3 class="text-primary">
             <a href="https://wago.io/VJMtYLlrG">ShadowTechniques Counter</a>
           </h3>
-          <p class="">Numberal counter that helps you predict the 
+          <p class="">Numberal counter that helps you predict the
             <a href="https://www.wowhead.com/spell=196912">[Shadow Techniques]</a> Procs.</p>
         </div>
         <div class="col-md-6"></div>
@@ -211,7 +211,7 @@
           <h3 class="text-primary">
             <a href="https://wago.io/NJkH7IB1X">Shadowdance Charges for the Personal Ressource Frame</a>
           </h3>
-          <p class="">Showes 
+          <p class="">Showes
             <a href="https://www.wowhead.com/spell=185422">[Shadow Dance]</a> charges/cooldown as a visual bar.</p>
         </div>
       </div>
