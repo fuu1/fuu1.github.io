@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="821aa04d-72ff-426d-86b5-ccfe30155a91" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/guide_basics.html" afterPath="$PROJECT_DIR$/guide_basics.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/guide_dfa.html" afterPath="$PROJECT_DIR$/guide_dfa.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/guide_equipment.html" afterPath="$PROJECT_DIR$/guide_equipment.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/guide_interface.html" afterPath="$PROJECT_DIR$/guide_interface.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/guide_non_dfa.html" afterPath="$PROJECT_DIR$/guide_non_dfa.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style/screen.css" afterPath="$PROJECT_DIR$/style/screen.css" />
-    </list>
+    <list default="true" id="821aa04d-72ff-426d-86b5-ccfe30155a91" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -335,12 +327,12 @@
       <workItem from="1503991859046" duration="2206000" />
       <workItem from="1503996070177" duration="19714000" />
       <workItem from="1504208758567" duration="1267000" />
-      <workItem from="1504214898670" duration="5417000" />
+      <workItem from="1504214898670" duration="5661000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32331000" />
+    <option name="totallyTimeSpent" value="32575000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-368" width="2064" height="1128" extended-state="6" />
