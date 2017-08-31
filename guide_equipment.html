@@ -4,53 +4,45 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
-  <link rel="stylesheet" href="https://pingendo.github.io/templates/blank/theme.css" type="text/css">
+  <link rel="stylesheet" href="style/bootstrap.min.css">
   <link rel="stylesheet" href="style/screen.css">
-  <!--<script src="//wow.zamimg.com/widgets/power.js"></script>-->
   <script src="js/script.js"></script>
   <script src="js/wowhead.js"></script>
-
+  <script src="js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 </head>
 
+
 <body>
-<nav class="navbar navbar-expand-md bg-inverse navbar-inverse">
-  <div class="container">
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="index.html">Home</a>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
 
-    <a class="navbar-brand" href="index.html">Home</a>
-
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-      <ul class="navbar-nav mr-auto text-white">
-        <!--<li class="nav-item active">-->
-        <!--<a class="nav-link" href="index.html">News-->
-        <!--<br><span class="sr-only">(current)</span></a>-->
-        <!--</li>-->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Subtlety </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="guide_basics.html">Basics</a>
-            <a class="dropdown-item" href="guide_equipment.html">Equipment</a>
-            <a class="dropdown-item disabled" href="#">Dynamic Gamplay</a>
-            <a class="dropdown-item" href="guide_dfa.html">Gameplay - DfA</a>
-            <a class="dropdown-item" href="guide_non_dfa.html">Gameplay - Non DfA</a>
-            <a class="dropdown-item" href="guide_interface.html">Interface</a>
-          </div>
-        </li>
-        <li class="nav-item dissab">
-          <a class="nav-link disabled" href="#">Charts
-            <br> </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">About</a>
-        </li>
-      </ul>
-    </div>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Subtlety
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="guide_basics.html">Basics</a>
+          <a class="dropdown-item" href="guide_equipment.html">Equipment</a>
+          <a class="dropdown-item disabled" href="#">Dynamic Gamplay</a>
+          <a class="dropdown-item" href="guide_dfa.html">Gameplay - DfA</a>
+          <a class="dropdown-item" href="guide_non_dfa.html">Gameplay - Non DfA</a>
+          <a class="dropdown-item" href="guide_interface.html">Interface</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">About</a>
+      </li>
+    </ul>
   </div>
 </nav>
 
-
-<div class="py-5 section text-center bg-info">
+<div class="py-5 section text-center ">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -67,13 +59,13 @@
   </div>
 
 <!--=========LootTable=========-->
-  <div class="py-5  section bg-info">
+  <div class="py-5  section ">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
           <h1 class="text-primary">Gearing Content and System:</h1>
-          <p class="lead">The main source of gear are raids. However Legion introduced additional ways to get loot one of the big sources is Mythic Plus a scaling dongeon system with reward relative to the difficulty of the dongeon and the Titanforged system that basicly
-            enables any gear that drops to become alot more powerfull. Professions are also an additional source that helps you on lower gear lvls but are limited.&nbsp;
+          <p class="lead">The main sources of gear are raids. However, Legion introduced additional ways to get loot. One of the big sources is Mythic Plus, a scaling dungeon system with rewards relative to the difficulty level of the dungeon. Another source is the War/Titanforged system that enables any gear that drops to become a lot more powerful.
+             Professions are also an additional source that helps you on lower gear levels but are limited.&nbsp;
             <br>
             <br> </p>
           <h3 class="">Item Level Table:
@@ -85,27 +77,27 @@
           <table class="table">
             <thead>
               <tr>
-                <th class="text-white">Source</th>
-                <th class="text-white">LFR</th>
-                <th class="text-white">Normal</th>
-                <th class="text-white">Heroic</th>
-                <th class="text-white">Mythic</th>
+                <th class="">Source</th>
+                <th class="">LFR</th>
+                <th class="">Normal</th>
+                <th class="">Heroic</th>
+                <th class="">Mythic</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td class="text-white">The Nighthold</td>
-                <td class="text-white">860</td>
-                <td class="text-white">875</td>
-                <td class="text-white">890</td>
-                <td class="text-white">905</td>
+                <td class="">The Nighthold</td>
+                <td class="">860</td>
+                <td class="">875</td>
+                <td class="">890</td>
+                <td class="">905</td>
               </tr>
               <tr>
-                <td class="text-white">Tomb of Sageras</td>
-                <td class="text-white">885</td>
-                <td class="text-white">900</td>
-                <td class="text-white">915</td>
-                <td class="text-white">930</td>
+                <td class="">Tomb of Sageras</td>
+                <td class="">885</td>
+                <td class="">900</td>
+                <td class="">915</td>
+                <td class="">930</td>
               </tr>
             </tbody>
           </table>
@@ -121,16 +113,16 @@
             </thead>
             <tbody>
               <tr>
-                <td class="text-white">Mythic Plus</td>
-                <td class="text-white">885-915</td>
+                <td class="">Mythic Plus</td>
+                <td class="">885-915</td>
               </tr>
               <tr>
-                <td class="text-white">Crafted Gear</td>
-                <td class="text-white">880-935</td>
+                <td class="">Crafted Gear</td>
+                <td class="">880-935</td>
               </tr>
               <tr>
-                <td class="text-white">Titanforging</td>
-                <td class="text-white">up to 955</td>
+                <td class="">Titanforging</td>
+                <td class="">up to 955</td>
               </tr>
             </tbody>
           </table>
@@ -145,14 +137,14 @@
         <div class="col-md-8 ">
           <h2 class="text-center">
             <br>Mythic Plus chest:</h2>
-          <p class="lead">If you completed a mythic plus dongeon of the lvl 10 or higher you recive a 930 itemlvl gear piece in the loot chest of your class order hall after the weely reset.</p>
+          <p class="lead">If you complete a Mythic Plus dungeon of at least a level 10 or higher, you receive a 935 or more, depending on Titanforging item level piece of gear in the weekly loot chest found in your class order hall resets during weekly reset.</p>
         </div>
       </div>
     </div>
   </div>
 
 <!--=========Enchants/Gems/Consumable=========-->
-  <div class="py-5 bg-info">
+  <div class="py-5 ">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -162,10 +154,10 @@
             <div class="col-md-3">
               <img class="img-fluid d-block" src="http://i.imgur.com/7OwuIKW.png"> </div>
             <div class="col-md-9 ">
-              <p class="lead">Enchants, consumables and gems give your character additional smal power gains.
+              <p class="lead">Enchants, consumables and gems give your character additional small power gains.
                 <br>You can enchant your Back, Neck and both rings permanently with either stats or additional proc effects.
-                <br>Consumables are most of the time one time use effects that dont sustain death with the exception of flasks.
-                <br>Gems are procs from the Titanforging system or provided on legendary items in slots without main stat.</p>
+                <br>Consumables are mostly one-time-use effects that don't persist through death, with the exception of flasks.
+                <br>Gem slots are procs from the Titanforging/Bonus Stat system, or exist naturally on legendary rings/necks, as well as crafted legendaries.</p>
             </div>
           </div>
           <h3 class="text-primary">Consumables:
@@ -191,9 +183,9 @@
             <br>
             <br> </p>
           <h3 class="text-primary">Enchants:</h3>
-          <p class="lead">Enchants can vary dependent on your gear and the scenario.
+          <p class="lead">Enchants can vary depending on your gear and the scenario.
             <br>The general aim is to get Mastery &gt; Versatility &gt; Critical Strike &gt; Haste
-            <br>Its recommendet to run a simulation to get the most value from Enchants.
+            <br>It is recommended to run a simulation to determine the best enchants for your gear.
             <br>
             <br>Ring: &nbsp;
             <a href="https://www.wowhead.com/item=128543">[Binding of Mastery]</a>&nbsp;/&nbsp;
@@ -206,8 +198,7 @@
             <br>
             <br> </p>
           <h3 class="text-primary">Gems:</h3>
-          <p class="lead">The same rules that apply to enchants apply to gems.
-            <br>Its recommedet to run a simulation.
+          <p class="lead">As with enchants, it is recommended to run a simulation to determine the best gems to use in your gear.
             <br>
             <br>First slot: &nbsp;
             <a href="https://www.wowhead.com/item=130247">[Saber's Eye of Agility]</a>
@@ -222,14 +213,14 @@
   </div>
 
 <!--=========Relics=========-->
-  <div class="py-5 bg-info">
+  <div class="py-5 ">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
           <h1 class="text-primary">Relics</h1>
-          <p class="lead">Relics offer optimization to your artifact weapon and bring itemlvl and one(two with 7.3) additional point in one of the minor artefact traits.
-            <br>The power lvl of certain traits depend on alot of things including your gear, the bossfight, the NC traits and the strategie.
-            <br>The best way to evaluate those is to run a simulation.</p>
+          <p class="lead">Relics offer optimization to your artifact weapon and bring item level and one (two with 7.3) additional point in one of the minor artifact traits.
+            <br>The power levels of certain traits depends on a lot of things including your gear, the boss, your Netherlight Crucible traits, and your guild's strategy.
+            <br>The best way to evaluate relics is to run a simulation.</p>
         </div>
       </div>
       <div class="row">
@@ -237,61 +228,61 @@
           <table class="table">
             <thead>
               <tr>
-                <th class="text-white">Trait</th>
-                <th class="text-white">Discription</th>
+                <th class="">Trait</th>
+                <th class="">Recommendation</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td class="text-white">
+                <td class="">
                   <a href="https://www.wowhead.com/spell=197239">[Energetic Stabbing]</a>
                 </td>
-                <td class="text-white">One of the strongets ST traits..</td>
+                <td class="">One of the strongest pure single-target traits (loses a lot of value as soon as any AoE is introduced to the fight).</td>
               </tr>
               <tr>
-                <td class="text-white">
+                <td class="">
                   <a href="https://www.wowhead.com/spell=238068">[Weak Point]</a>
                 </td>
-                <td class="text-white">Extremely potent with&nbsp;
-                  <a href="https://www.wowhead.com/item=137049">[Insignia of Ravenholdt]</a>&nbsp;, also good without on ST fights.</td>
+                <td class="">Extremely potent with&nbsp;
+                  <a href="https://www.wowhead.com/item=137049">[Insignia of Ravenholdt]</a>&nbsp; also good without <a href="https://www.wowhead.com/item=137049" >[Insignia of Ravenholdt]</a> on single-target fights.</td>
               </tr>
               <tr>
-                <td class="text-white">
+                <td class="">
                   <a href="https://www.wowhead.com/spell=197386">[Soul Shadows]</a>
                 </td>
-                <td class="text-white">Very strong with&nbsp;
-                  <a href="https://www.wowhead.com/item=137100">[Denial of the Half-Giants]</a>&nbsp;on ST and MT fights.</td>
+                <td class="">Very strong with&nbsp;
+                  <a href="https://www.wowhead.com/item=137100">[Denial of the Half-Giants]</a>&nbsp;on single-target and multi-target fights.</td>
               </tr>
               <tr>
-                <td class="text-white">
+                <td class="">
                   <a href="https://www.wowhead.com/spell=197234">[Gutripper]</a>
                 </td>
-                <td class="text-white">Strong trait on ST and MT fights.</td>
+                <td class="">Strong trait single-target and multi-target fights.</td>
               </tr>
               <tr>
-                <td class="text-white">
+                <td class="">
                   <a href="https://www.wowhead.com/spell=197235">[Precision Strike]</a>
                 </td>
-                <td class="text-white">Is a decent trait for ST fights.</td>
+                <td class="">Is a decent trait for single-target fights.</td>
               </tr>
               <tr>
-                <td class="text-white">
+                <td class="">
                   <a href="https://www.wowhead.com/spell=197231">[The Quiet Knife]</a>
                 </td>
-                <td class="text-white">An ok trait for ST fights.</td>
+                <td class="">An ok trait for single-target fights.</td>
               </tr>
               <tr>
-                <td class="text-white">
+                <td class="">
                   <a href="https://www.wowhead.com/spell=197233">[Demon's Kiss]</a>
                 </td>
-                <td class="text-white">One of the weak traits with the changes to&nbsp;
-                  <a href="https://www.wowhead.com/spell=195452">[Nightblade]</a>, gains abit on value with T19 2P on ST fights.</td>
+                <td class="">One of the weaker traits with the changes to&nbsp;
+                  <a href="https://www.wowhead.com/spell=195452">[Nightblade]</a>. Gains a bit of value with T19 2P on single-target fights.</td>
               </tr>
               <tr>
-                <td class="text-white">
+                <td class="">
                   <a href="https://www.wowhead.com/spell=197369">[Fortune's Bite]</a>
                 </td>
-                <td class="text-white">Worst dps trait, gets abit stronger if you play&nbsp;
+                <td class="">Worst DPS trait. Gets a bit stronger if you select&nbsp;
                   <a href="https://www.wowhead.com/spell=114015">[Anticipation]</a>.</td>
               </tr>
             </tbody>
@@ -302,10 +293,10 @@
         <div class="col-md-12">
           <h3 class="text-primary">
             <br>Netherlight crucible:</h3>
-          <p class="lead">Is an relic customization introduced in 7.3 that has 3 tiers. Tier one is always an flat itemlvl increse for your relics up to +15 per relic. The 2nd Tier has 1 out of 6 &nbsp;random light and shadow trait you need to chose between.The 3rd Tier&nbsp;has
-            3 minor traits that cant be the initial minor trait. You can only choose between 2 of them depending on what Tier 2 choice you made.
-            <br>You need to have 60/63/66 in&nbsp;
-            <a href="https://www.wowhead.com/spell=239042">[Concordance of the Legionfall]</a>&nbsp;to unlock the Tier 2 Traits and 69/72/75 for Tier 3.</p>
+          <p class="lead">The Netherlight Crucible is a relic customization tool introduced in 7.3 that has 3 tiers. Tier one is always a flat item level increase for your relics, up to +15 per. Tier two has 1 of 6  &nbsp;random light and shadow traits you need to choose between.Tier three has 3 &nbsp;
+            minor traits that can't be the same as the initial minor trait. You can only choose between 2 of them depending on what Tier 2 choice you made.
+            <br>ou need to have 60/63/66 points in your artifact weapon (8/11/14 points in &nbsp;
+            <a href="https://www.wowhead.com/spell=239042">[Concordance of the Legionfall]</a>&nbsp;)to unlock the Tier 2 traits, and 69/72/75 points in your artifact weapon to unlock the Tier 3 traits.</p>
         </div>
       </div>
       <div class="row">
@@ -314,44 +305,44 @@
           <table class="table">
             <thead>
               <tr>
-                <th class="text-white">Shadow Trait</th>
-                <th class="text-white">Light Trait</th>
+                <th class="">Shadow Trait</th>
+                <th class="">Light Trait</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td class="text-white">
+                <td class="">
                   <a href="https://www.wowhead.com/spell=252091">[Master of Shadows]</a><b>&nbsp;+3.6%</b></td>
-                <td class="text-white">
+                <td class="">
                   <a href="https://www.wowhead.com/spell=252088">[Light Speed]</a>&nbsp;+2.2%</td>
               </tr>
               <tr>
-                <td class="text-white">
+                <td class="">
                   <a href="https://www.wowhead.com/spell=252191">[Murderous Intent]</a>&nbsp;<b>+3.6%</b></td>
                 <td>
                   <a href="https://www.wowhead.com/spell=252207">[Refractive Shell]</a>
                 </td>
               </tr>
               <tr>
-                <td class="text-white">
+                <td class="">
                   <a href="https://www.wowhead.com/spell=252875">[Shadowbind]</a>&nbsp;+2%</td>
-                <td class="text-white">
+                <td class="">
                   <a href="https://www.wowhead.com/spell=252799">[Shocklight]</a>&nbsp;<b>+2.8%</b></td>
               </tr>
               <tr>
-                <td class="text-white">
+                <td class="">
                   <a href="https://www.wowhead.com/spell=252888">[Chaotic Darkness]</a>&nbsp;+2%</td>
-                <td class="text-white">
+                <td class="">
                   <a href="https://www.wowhead.com/spell=253070">[Secure in the Light]</a>&nbsp;<b>+2.75%</b></td>
               </tr>
               <tr>
-                <td class="text-white">
+                <td class="">
                   <a href="https://www.wowhead.com/spell=252906">[Torment the Weak]</a>&nbsp;+2.45%</td>
-                <td class="text-white">
+                <td class="">
                   <a href="https://www.wowhead.com/spell=253093">[Infusion of Light]</a>&nbsp;+2.7%</td>
               </tr>
               <tr>
-                <td class="text-white">
+                <td class="">
                   <a href="https://www.wowhead.com/spell=252922">[Dark Sorrows]</a>&nbsp;+0.7%</td>
                 <td>
                   <a href="https://www.wowhead.com/spell=253111">[Light's Embrace]</a>
@@ -365,16 +356,16 @@
   </div>
 
 <!--=========Legendary=========-->
-  <div class="py-5 bg-info">
+  <div class="py-5 ">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h1 class="text-primary">Legendarys</h1>
-          <p class="lead">The strengh of an Legendary Item depends on the gear you have and is relative to the replacements available aswell as the scenario you use them in.
-            <br>The assumed best legendary combination can therefore be weaker for your personal situation becouse of relics/replacements.
-            <br>Simulations tables can be used to get a basic knowlage of the Legendary's strengh relative to each other.
-            <br>The best way to find the Legendary combination suiting for your character is to run a simulation.
-            <br>The currently strongest combination for Single target fights is currently&nbsp;
+          <h1 class="text-primary">Legendaris</h1>
+          <p class="lead">The strength of a legendary item depends on your gear, your available replacements for legendaries, as well as the specific situation.
+            <br>The so-called "Best in Slot" legendary combination can therefore be weaker for your current situation due to equipped relics and/or your equipped gear.
+            <br>Simulations can be used to get a basic knowledge of each legendary's strength relative to each other.
+			<br>The best way to find the best legendary combination is to run a simulation.
+            <br>That being said, typically the current strongest combination for single-target fights is&nbsp;
             <a href="https://www.wowhead.com/item=144236">[Mantle of the Master Assassin]</a>&nbsp;and&nbsp;
             <a href="https://www.wowhead.com/item=151818">[The First of the Dead]</a>.</p>
         </div>
@@ -384,7 +375,7 @@
           <table class="table">
             <thead>
               <tr>
-                <th class="text-white">Legendary</th>
+                <th class="">Legendary</th>
                 <th></th>
               </tr>
             </thead>
@@ -393,7 +384,7 @@
                 <td>
                   <a href="https://www.wowhead.com/item=137100">[Denial of the Half-Giants]</a>
                 </td>
-                <td class="text-white">Strong legendary only in combination with&nbsp;
+                <td class="">Strong legendary only in combination with&nbsp;
                   <a href="https://www.wowhead.com/item=140806">[Convergence of Fates]</a>
                 </td>
               </tr>
@@ -401,50 +392,50 @@
                 <td>
                   <a href="https://www.wowhead.com/item=144236">[Mantle of the Master Assassin]</a>
                 </td>
-                <td class="text-white">Best legendary for the Spec that turns&nbsp;
+                <td class="">Best legendary for the Spec that turns&nbsp;
                   <a href="https://www.wowhead.com/spell=1856">[Vanish]</a>&nbsp;into an strong dps cooldown..</td>
               </tr>
               <tr>
                 <td>
                   <a href="https://www.wowhead.com/item=150936">[Soul of the Shadowblade]</a>
                 </td>
-                <td class="text-white">Strong choice in AoE fights. Also makes the spec play abit smoother.</td>
+                <td class="">Strong choice in AoE fights. Also makes the spec play a bit more smoothly.</td>
               </tr>
               <tr>
                 <td>
                   <a href="https://www.wowhead.com/item=144259">[Kil'jaeden's Burning Wish]</a>
                 </td>
-                <td class="text-white">Decent trinket for mythic plus or on fights that need burst aoe.</td>
+                <td class="">Decent trinket for mythic plus or on fights that need burst aoe.</td>
               </tr>
               <tr>
                 <td>
                   <a href="https://www.wowhead.com/item=137032">[Shadow Satyr's Walk]</a>
                 </td>
-                <td class="text-white">Strong Single target choice that requires some practice for optimal use.</td>
+                <td class="">Strong Single target choice that requires some practice for optimal use.</td>
               </tr>
               <tr>
                 <td>
                   <a href="https://www.wowhead.com/item=137021">[The Dreadlord's Deceit]</a>
                 </td>
-                <td class="text-white">Is strong becouse we can line it up with our damage cooldowns.</td>
+                <td class="">Strong in certain burst AoE situations because we can line it up with our damage-increasing cooldowns.</td>
               </tr>
               <tr>
                 <td>
                   <a href="https://www.wowhead.com/item=133976">[Cinidaria, the Symbiote]</a>
                 </td>
-                <td class="text-white">Is an underrated Legendary that is strong due to our high initial burst.</td>
+                <td class="">An underrated legendary that is strong due to our high initial burst.</td>
               </tr>
               <tr>
                 <td>
                   <a href="https://www.wowhead.com/item=151818">[The First of the Dead]</a>
                 </td>
-                <td class="text-white">Our strongest single target legendary.</td>
+                <td class="">Our strongest single target legendary.</td>
               </tr>
               <tr>
                 <td>
                   <a href="https://www.wowhead.com/item=137049">[Insignia of Ravenholdt]</a>
                 </td>
-                <td class="text-white">Decent single target legendary that also works well with&nbsp;
+                <td class="">Decent single target legendary that also works well with&nbsp;
                   <a href="https://www.wowhead.com/spell=200758" class="">[Gloomblade]</a>.</td>
               </tr>
             </tbody>
@@ -455,14 +446,14 @@
   </div>
 
 <!--=========TierPieces=========-->
-  <div class="py-5 bg-info text-white">
+  <div class="py-5  ">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
           <h1 class="text-primary">Tier Pieces</h1>
-          <p class="lead">Every raid tier offers 6 Set pieces that if you wear 2 or 4 of them give you an additional damag boost by enhancing your gameplay in one or another way. In legion we are able to wear multiple tier pieces but are reliant on the titanforging system
-            if we want to keep old ones. The table below shows the strengh of the tier boni without counting in itemlvl or stat distribution on the pieces.
-            <br>Certain Legendaries also limit our options to viewer pieces and maybe result in scenarios where we need to use a Tier piece that has not optimal attributes.</p>
+          <p class="lead">Every raid tier offers 6 set pieces that, when you wear 2 or 4 of them, give y ou an additional damage boost by enhancing your gameplay in one way or another. In Legion we are able to wear multiple tier pieces but are reliant on the titanforging system
+            if we want to keep old ones. The table below shows the strengh of the tier bonuses without counting in item level or stat distribution on the pieces.
+            <br>Certain Legendaries also limit our options to fewer pieces and may result in scenarios where we need to use a Tier piece that has sub-optimal attributes.</p>
         </div>
       </div>
       <div class="row">
@@ -470,42 +461,42 @@
           <table class="table">
             <thead>
               <tr>
-                <th class="text-white">Bracers + Mantle</th>
-                <th class="text-white">Dfa</th>
-                <th class="text-white">MfD</th>
+                <th class="">Bracers + Mantle</th>
+                <th class="">Dfa</th>
+                <th class="">MfD</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td class="text-white">T19 2P</td>
-                <td class="text-white">3.7 %</td>
-                <td class="text-white">4.9 %</td>
+                <td class="">T19 2P</td>
+                <td class="">3.7 %</td>
+                <td class="">4.9 %</td>
               </tr>
               <tr>
-                <td class="text-white">T19 4p</td>
-                <td class="text-white">1.6 %</td>
-                <td class="text-white">1.4 %
+                <td class="">T19 4p</td>
+                <td class="">1.6 %</td>
+                <td class="">1.4 %
                   <br> </td>
               </tr>
               <tr>
-                <td class="text-white">T20 2P</td>
-                <td class="text-white bg-info">5.1 %</td>
-                <td class="text-white">4.2 %</td>
+                <td class="">T20 2P</td>
+                <td class=" ">5.1 %</td>
+                <td class="">4.2 %</td>
               </tr>
               <tr>
-                <td class="text-white">T20 4p</td>
-                <td class="text-white bg-success">7.9 %</td>
-                <td class="text-white">3.6 %</td>
+                <td class="">T20 4p</td>
+                <td class=" bg-success">7.9 %</td>
+                <td class="">3.6 %</td>
               </tr>
               <tr>
-                <td class="text-white">T21 2p</td>
-                <td class="text-white">4.4 %</td>
-                <td class="text-white">4.8 %</td>
+                <td class="">T21 2p</td>
+                <td class="">4.4 %</td>
+                <td class="">4.8 %</td>
               </tr>
               <tr>
-                <td class="text-white">T21 4p</td>
-                <td class="text-white">4.7 %</td>
-                <td class="text-white bg-success">5.5 %</td>
+                <td class="">T21 4p</td>
+                <td class="">4.7 %</td>
+                <td class=" bg-success">5.5 %</td>
               </tr>
             </tbody>
           </table>
@@ -514,42 +505,42 @@
           <table class="table">
             <thead>
               <tr>
-                <th class="text-white">Hands + Mantle</th>
-                <th class="text-white">Dfa</th>
-                <th class="text-white">MfD</th>
+                <th class="">Hands + Mantle</th>
+                <th class="">Dfa</th>
+                <th class="">MfD</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td class="text-white">T19 2P</td>
-                <td class="text-white">3.8 %</td>
-                <td class="text-white">4.2 %</td>
+                <td class="">T19 2P</td>
+                <td class="">3.8 %</td>
+                <td class="">4.2 %</td>
               </tr>
               <tr>
-                <td class="text-white">T19 4p</td>
-                <td class="text-white">1.8 %</td>
-                <td class="text-white">1.9 %
+                <td class="">T19 4p</td>
+                <td class="">1.8 %</td>
+                <td class="">1.9 %
                   <br> </td>
               </tr>
               <tr>
-                <td class="text-white">T20 2P</td>
-                <td class="text-white bg-info">5.5 %</td>
-                <td class="text-white bg-success">6.4 %</td>
+                <td class="">T20 2P</td>
+                <td class=" ">5.5 %</td>
+                <td class=" bg-success">6.4 %</td>
               </tr>
               <tr>
-                <td class="text-white">T20 4p</td>
-                <td class="text-white bg-success">10.4 %</td>
-                <td class="text-white">3.6 %</td>
+                <td class="">T20 4p</td>
+                <td class=" bg-success">10.4 %</td>
+                <td class="">3.6 %</td>
               </tr>
               <tr>
-                <td class="text-white">T21 2p</td>
-                <td class="text-white">3.9 %</td>
-                <td class="text-white">4.2 %</td>
+                <td class="">T21 2p</td>
+                <td class="">3.9 %</td>
+                <td class="">4.2 %</td>
               </tr>
               <tr>
-                <td class="text-white">T21 4p</td>
-                <td class="text-white">3.8 %</td>
-                <td class="text-white">5.1 %</td>
+                <td class="">T21 4p</td>
+                <td class="">3.8 %</td>
+                <td class="">5.1 %</td>
               </tr>
             </tbody>
           </table>
@@ -560,63 +551,63 @@
           <p class="lead">
             <br>Hands impact the Value of T20 by a higher amount as you see from the chart above.
             <br>
-            <br>Each Slot offers a diffrent attribut budget therefore some gear slots are stronger then other ones.
+            <br>Each slot offers a different attribute budget which leads to some gear slots being stronger than others.
             <br>The general aim is to get the best possible stats with the tier pieces.
             <br>
-            <br>This chart can help you find the best piece.
+            <br>This chart can help you find the best tier pieces.
             <br> </p>
           <table class="table">
             <thead>
               <tr>
-                <th class="text-white">T19</th>
-                <th class="text-white">Mastery</th>
-                <th class="text-white">Versatility</th>
-                <th class="text-white">Critical Strike</th>
-                <th class="text-white">Haste</th>
+                <th class="">T19</th>
+                <th class="">Mastery</th>
+                <th class="">Versatility</th>
+                <th class="">Critical Strike</th>
+                <th class="">Haste</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <th class="text-white">Head</th>
+                <th class="">Head</th>
                 <th>-</th>
-                <th class="text-white bg-success">2</th>
+                <th class=" bg-success">2</th>
                 <th>-</th>
-                <th class="text-white bg-success">1</th>
+                <th class=" bg-success">1</th>
               </tr>
               <tr>
-                <th class="text-white">Shoulders</th>
-                <th class="text-white bg-success">1</th>
-                <th class="text-white bg-success">2</th>
+                <th class="">Shoulders</th>
+                <th class=" bg-success">1</th>
+                <th class=" bg-success">2</th>
                 <th>-</th>
-                <th>-</th>
-              </tr>
-              <tr>
-                <th class="text-white">Back</th>
-                <th>-</th>
-                <th>-</th>
-                <th class="text-white bg-success">1</th>
-                <th class="text-white bg-success">2</th>
-              </tr>
-              <tr>
-                <th class="text-white">Chest</th>
-                <th class="text-white bg-success">2</th>
-                <th>-</th>
-                <th class="text-white bg-success">1</th>
                 <th>-</th>
               </tr>
               <tr>
-                <th class="text-white">Hands</th>
+                <th class="">Back</th>
                 <th>-</th>
-                <th class="text-white bg-success">1</th>
-                <th class="text-white bg-success">2</th>
+                <th>-</th>
+                <th class=" bg-success">1</th>
+                <th class=" bg-success">2</th>
+              </tr>
+              <tr>
+                <th class="">Chest</th>
+                <th class=" bg-success">2</th>
+                <th>-</th>
+                <th class=" bg-success">1</th>
                 <th>-</th>
               </tr>
               <tr>
-                <th class="text-white">Legs</th>
-                <th class="text-white bg-success">1</th>
+                <th class="">Hands</th>
+                <th>-</th>
+                <th class=" bg-success">1</th>
+                <th class=" bg-success">2</th>
+                <th>-</th>
+              </tr>
+              <tr>
+                <th class="">Legs</th>
+                <th class=" bg-success">1</th>
                 <th>-</th>
                 <th>-</th>
-                <th class="text-white bg-success">2</th>
+                <th class=" bg-success">2</th>
               </tr>
             </tbody>
           </table>
@@ -624,59 +615,59 @@
       </div>
       <div class="row">
         <div class="col-md-12">
-          <p class="lead">1... highest secoundary attribute
-            <br>2... lowest secoundary attribute</p>
+          <p class="lead">1... highest secondary attribute
+            <br>2... lowest secondary attribute</p>
           <table class="table">
             <thead>
               <tr>
-                <th class="text-white">T20</th>
-                <th class="text-white">Mastery</th>
-                <th class="text-white">Versatility</th>
-                <th class="text-white">Critical Strike</th>
-                <th class="text-white">Haste</th>
+                <th class="">T20</th>
+                <th class="">Mastery</th>
+                <th class="">Versatility</th>
+                <th class="">Critical Strike</th>
+                <th class="">Haste</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <th class="text-white">Head</th>
-                <th class="text-white bg-success">1</th>
+                <th class="">Head</th>
+                <th class=" bg-success">1</th>
                 <th>-</th>
-                <th class="text-white bg-success">2</th>
-                <th>-</th>
-              </tr>
-              <tr>
-                <th class="text-white">Shoulders</th>
-                <th>-</th>
-                <th>-</th>
-                <th class="text-white bg-success">1</th>
-                <th class="text-white bg-success">2</th>
-              </tr>
-              <tr>
-                <th class="text-white">Back</th>
-                <th class="text-white bg-success">2</th>
-                <th class="text-white bg-success">1</th>
-                <th>-</th>
+                <th class=" bg-success">2</th>
                 <th>-</th>
               </tr>
               <tr>
-                <th class="text-white">Chest</th>
-                <th class="text-white bg-success">1</th>
+                <th class="">Shoulders</th>
                 <th>-</th>
                 <th>-</th>
-                <th class="text-white bg-success">2</th>
+                <th class=" bg-success">1</th>
+                <th class=" bg-success">2</th>
               </tr>
               <tr>
-                <th class="text-white">Hands</th>
+                <th class="">Back</th>
+                <th class=" bg-success">2</th>
+                <th class=" bg-success">1</th>
                 <th>-</th>
-                <th class="text-white bg-success">2</th>
                 <th>-</th>
-                <th class="text-white bg-success">1</th>
               </tr>
               <tr>
-                <th class="text-white">Legs</th>
+                <th class="">Chest</th>
+                <th class=" bg-success">1</th>
                 <th>-</th>
-                <th class="text-white bg-success">2</th>
-                <th class="text-white bg-success">1</th>
+                <th>-</th>
+                <th class=" bg-success">2</th>
+              </tr>
+              <tr>
+                <th class="">Hands</th>
+                <th>-</th>
+                <th class=" bg-success">2</th>
+                <th>-</th>
+                <th class=" bg-success">1</th>
+              </tr>
+              <tr>
+                <th class="">Legs</th>
+                <th>-</th>
+                <th class=" bg-success">2</th>
+                <th class=" bg-success">1</th>
                 <th>-</th>
               </tr>
             </tbody>
@@ -685,34 +676,34 @@
       </div>
       <div class="row">
         <div class="col-md-12">
-          <p class="lead">1... highest secoundary attribute
-            <br>2... lowest secoundary attribute</p>
+          <p class="lead">1... highest secondary attribute
+            <br>2... lowest secondary attribute</p>
         </div>
       </div>
     </div>
   </div>
 
 
-  <div class="py-4 bg-info">
+  <div class="py-4 ">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h1 class="text-primary">Gearing up and attribut distribution</h1>
-          <p class="lead">With progress in your gear you will more and more aim to gather as mutch of the stronger secoundary attributes as possible while still using high itemlvl pieces due to your main attrubut.
-            <br>Certain secoundarie attributes become stronger if you have low amounts of them so the best way to get information about the impact of a certain stat in your current situation is to run a simulation.</p>
+          <h1 class="text-primary">Gearing up and attribute distribution</h1>
+          <p class="lead">As you gear up, you will start to optimize your gear around your secondary attributes as much as possible while still using as many of your high item level pieces as possible.
+            <br>Certain secondary attributes become stronger if you have low amounts of them. The best way to determine the impact each stat will make based on your current gear is to run a simulation.</p>
           <h1 class="text-primary">
             <br>
             <br>Trinkets:
             <br> </h1>
-          <p class="lead">The currently strongest Trinket &nbsp;is&nbsp;
-            <a href="https://www.wowhead.com/item=151190">[Specter of Betrayal]</a>. Its uses along with diffrent other Trinkets.
+          <p class="lead">Currently, the strongest trinket &nbsp;is&nbsp;
+            <a href="https://www.wowhead.com/item=151190">[Specter of Betrayal]</a>. It is used alongside various other trinkets.
             <br>
-            <a href="https://www.wowhead.com/item=140806">[Convergence of Fates]</a>&nbsp;loses on value if you dont use the&nbsp;
-            <a href="https://www.wowhead.com/item=137100">[Denial of the Half-Giants]</a>&nbsp;Legendary and gets usualy replaced with a stonger itemlvl Tomb of Sageras Trinket.
-            <br>If we use 2 Trinkets with an on use effect the use of the first one will trigger a 10 secound cooldown for the secound one.
-            <br>This means that the rotation need to be adjusted if thats the case for you.
+            <a href="https://www.wowhead.com/item=140806">[Convergence of Fates]</a>&nbsp;loses value if you aren't using &nbsp;
+            <a href="https://www.wowhead.com/item=137100">[Denial of the Half-Giants]</a>&nbsp;, and as such usually gets replaced with higher item level Tomb of Sargeras trinkets, such as <a href="https://www.wowhead.com/item=147015" >[Engine of Eradication]</a>.
+            <br>If you use 2 trinkets with an on-use effect, the use of one will trigger a 10 second cooldown for the other one.
+            <br>In this case, the rotation will need to be adjusted to account for the cooldown imposed on the second trinket.
             <br>The best way to evaluate Trinkets is to run a simulations but you can look at the graphs provided by&nbsp;
-            <a href="http://tc.ravenholdt.net/">Ravenhod TC</a>&nbsp;or&nbsp;
+            <a href="http://tc.ravenholdt.net/">Ravenholdt TC</a>&nbsp;or&nbsp;
             <a href="https://bloodmallet.github.io/">Bloodmallet</a>&nbsp;to get an overview.</p>
         </div>
       </div>
@@ -720,12 +711,12 @@
   </div>
 
 <!--=========Intresting items=========-->
-  <div class="py-4 bg-info">
+  <div class="py-4 ">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h1 class="text-primary">Intressting Items</h1>
-          <p class="lead">Craftable Items aswell as trinkets and mythic plus drops.</p>
+          <h1 class="text-primary">Interesting Items</h1>
+          <p class="lead">Craftable Items as well as trinkets and mythic plus drops.</p>
         </div>
       </div>
       <div class="row">
@@ -733,8 +724,8 @@
           <table class="table">
             <thead>
               <tr>
-                <th class="text-white">Item</th>
-                <th class="text-white">Discription</th>
+                <th class="">Item</th>
+                <th class="">Discription</th>
               </tr>
             </thead>
             <tbody>
@@ -742,9 +733,9 @@
                 <td>
                   <a href="https://www.wowhead.com/item=111820">[Swapblaster]</a>
                 </td>
-                <td class="text-white">Can be used to skip certain pasages in mythic plus.</td>
+                <td class="">Can be used to skip certain areas in mythic plus.</td>
               </tr>
-              <tr class="text-white">
+              <tr class="">
                 <td>
                   <a href="https://www.wowhead.com/item=132515">[Failure Detection Pylon]</a>
                 </td>
@@ -754,98 +745,98 @@
                 <td>
                   <a href="https://www.wowhead.com/item=114943">[Ultimate Gnomish Army Knife]</a>
                 </td>
-                <td class="text-white">An additional item that can be used to resurrect a group member, the chance of success isn't that high.</td>
+                <td class="">An additional item that can be used to resurrect a group member, however the chance of success isn't that high.</td>
               </tr>
               <tr>
                 <td>
                   <a href="https://www.wowhead.com/item=132526">[Reaves Module: Failure Detection Mode]</a>
                 </td>
-                <td class="text-white">Besides the misleading tooltip resurrects the nearest party member.</td>
+                <td class="">Besides the misleading tooltip resurrects the nearest party member.</td>
               </tr>
               <tr>
                 <td>
                   <a href="https://www.wowhead.com/spell=55016">[Nitro Boosts]</a>
                 </td>
-                <td class="text-white">Can be used as an additional movement cooldown. Shares cooldown with combat potions.</td>
+                <td class="">Can be used as an additional movement cooldown. Shares cooldown with combat potions.</td>
               </tr>
               <tr>
                 <td>
                   <a href="https://www.wowhead.com/item=130236">[Subtle Shadowruby Pendant]</a>
                 </td>
-                <td class="text-white">Reduces the cooldown of your Sprint by 10 seconds. However, you need to make the killing blow on the mob.</td>
+                <td class="">Reduces the cooldown of your Sprint by 10 seconds. However, you need to make the killing blow on the mob.</td>
               </tr>
               <tr>
                 <td>
                   <a href="https://www.wowhead.com/item=134488">[Stabilized Energy Pendant]</a>
                 </td>
-                <td class="text-white">Increses your energy by 5%.</td>
+                <td class="">Increases your energy by 5%.</td>
               </tr>
               <tr>
                 <td>
                   <a href="https://www.wowhead.com/item=134526">[Gnawed Thumb Ring]</a>
                 </td>
-                <td class="text-white">Only increses magic damage.</td>
+                <td class="">Only increases magic damage.</td>
               </tr>
               <tr>
                 <td>
                   <a href="https://www.wowhead.com/item=133644">[Memento of Angerboda]</a>
                 </td>
-                <td class="text-white">Procs every time a party member dies. Strong choice in progress.</td>
+                <td class="">Procs every time a party member dies. Strong choice in progression.</td>
               </tr>
               <tr>
                 <td>
                   <a href="https://www.wowhead.com/item=142167">[Eye of Command]</a>
                 </td>
-                <td class="text-white">Is a very strong stat stick with crit, Requires a mouseover macro if you want to dot another target without losing the stacks.</td>
+                <td class="">Is a very strong stat stick with crit, requires a mouseover macro if you want to DoT another target without losing the stacks.</td>
               </tr>
               <tr>
                 <td>
                   <a href="https://www.wowhead.com/item=142173">[Ring of Collapsing Futures]</a>
                 </td>
-                <td class="text-white">Requires you touse the item every 30 secounds to get the most benefits. debuff is removeable with&nbsp;
+                <td class="">Requires you to use the item every 30 seconds to get the greatest benefit. Debuff is removeable with&nbsp;
                   <a href="https://www.wowhead.com/spell=31224">[Cloak of Shadows]</a>.</td>
               </tr>
               <tr>
                 <td>
                   <a href="https://www.wowhead.com/item=140806">[Convergence of Fates]</a>
                 </td>
-                <td class="text-white">Class trinket that impacts our 3 minute cooldown. One of the best trinkets with a rppm of 9.</td>
+                <td class="">Class trinket that impacts our <a href="https://www.wowhead.com/spell=121471" >[Shadow Blades]</a>.One of the best trinkets with a rppm of 9.</td>
               </tr>
               <tr>
                 <td>
                   <a href="https://www.wowhead.com/item=140802">[Nightblooming Frond]</a>
                 </td>
-                <td class="text-white">Has a low proc chance and is therefore not consistant in damage.(sims right)</td>
+                <td class="">Has a low proc chance and is therefore not consistent in damage.(sims right)</td>
               </tr>
               <tr>
                 <td>
                   <a href="https://www.wowhead.com/item=147012">[Umbral Moonglaives]</a>
                 </td>
-                <td class="text-white">Extremely potent AoE trinket. Requires the mobs to stay within its effect range to be efficient.</td>
+                <td class="">Extremely potent AoE trinket. Requires the mobs to stay within its effect range to be efficient.</td>
               </tr>
               <tr>
                 <td>
                   <a href="https://www.wowhead.com/item=151190">[Specter of Betrayal]</a>
                 </td>
-                <td class="text-white">Strongest ST trinket but requires the boss to be relative stationair to get the highest benefit.</td>
+                <td class="">Strongest ST trinket but requires the boss to be relatively stationary to get the highest benefit.</td>
               </tr>
               <tr>
                 <td>
                   <a href="https://www.wowhead.com/item=147015">[Engine of Eradication]</a>
                 </td>
-                <td class="text-white">Has a very good proc that gets you an very high uptime if you collect all orbs.</td>
+                <td class="">Has a very good proc that gets you a very high uptime if you collect all orbs.</td>
               </tr>
               <tr>
                 <td>
                   <a href="https://www.wowhead.com/item=147011">[Vial of Ceaseless Toxins]</a>
                 </td>
-                <td class="text-white">Is a strong trinket that offers you the option to abuse the reset if the fight alowes it.</td>
+                <td class="">Is a strong trinket that offers you the option to abuse the reset if the fight allows it.</td>
               </tr>
               <tr>
                 <td>
                   <a href="https://www.wowhead.com/item=140808">[Draught of Souls]</a>
                 </td>
-                <td class="text-white">Makes your carakter imune to knowckbacks during the channel.</td>
+                <td class="">Makes your character immune to knockbacks during the channel.</td>
               </tr>
             </tbody>
           </table>
