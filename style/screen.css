@@ -2,11 +2,11 @@
 
 body{
     color: white ;
-    background-color: #333333
+    background-color: #333333;
+    overflow-x: hidden;
 }
 main{
-    max-width: 1290px;
-    width: 100%;
+
     margin: 0 auto;
 }
 
@@ -119,4 +119,24 @@ h3{
     text-decoration: none;
     background-color: #333333;
 }
-/*test*/
+
+.side_bar{
+    position: fixed;
+    right: 0;
+    background-color: #484848;
+    height: 100vh;
+    padding: 0;
+}
+.toc{
+    text-align: center;
+}
+.links a{
+    color: white;
+    font-size: 20px;
+    text-align: right;
+}
+.links li{
+    margin-top: 20px;
+    text-decoration: none;
+    list-style: none;
+}
