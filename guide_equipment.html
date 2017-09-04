@@ -50,17 +50,17 @@
 <div class="row">
 <div class="col-md-3 side_bar">
     <h4 class="toc text-primary">Table of content</h4>
-    <ul class="links">
+    <ul class="links col-md-12">
         <li><a href="#lootable">1- Loot-Table</a></li>
-        <li><a href="#enchantgem">2- Enchants/Gems/Consumable</a></li>
+        <li><a href="#enchantgem">2- Enchants/Gems</a></li>
         <li><a href="#relics">3- Relics</a></li>
-        <li><a href="#leg">4- Legendaris</a></li>
+        <li><a href="#leg">4- Legendaries</a></li>
         <li><a href="#tierpieces">5- Tier Pieces</a></li>
         <li><a href="#items">6- Intresting items</a></li>
     </ul>
 </div>
 
-<div class="col-md-9">
+<div class="col-md-9 main_content">
 
     <div class="py-5 section text-center ">
         <div class="container">
@@ -164,7 +164,7 @@
       </div>
 
     <!--=========Enchants/Gems/Consumable=========-->
-      <div class="py-5 " id="enchantgem">
+      <div class="py-5" id="enchantgem">
         <div class="container">
           <div class="row">
             <div class="col-md-12">
@@ -376,11 +376,11 @@
       </div>
 
     <!--=========Legendary=========-->
-      <div class="py-5 " id="leg">
+      <div class="py-5" id="leg">
         <div class="container">
           <div class="row">
             <div class="col-md-12">
-              <h1 class="text-primary">Legendaris</h1>
+              <h1 class="text-primary">Legendaries</h1>
               <p class="lead">The strength of a legendary item depends on your gear, your available replacements for legendaries, as well as the specific situation.
                 <br>The so-called "Best in Slot" legendary combination can therefore be weaker for your current situation due to equipped relics and/or your equipped gear.
                 <br>Simulations can be used to get a basic knowledge of each legendary's strength relative to each other.
@@ -466,7 +466,7 @@
       </div>
 
     <!--=========TierPieces=========-->
-      <div class="py-5  " id="tierpieces">
+      <div class="py-5" id="tierpieces">
         <div class="container">
           <div class="row">
             <div class="col-md-12">
@@ -882,6 +882,28 @@
         }, 'slow');
         return false;
     });
+
+</script>
+<script>
+    // sticky nav
+
+    var sitckynav = document.querySelector('.side_bar');
+    var content = document.querySelector('.main_content');
+
+
+    document.addEventListener('scroll', function (event) {
+
+        var scroll = document.body.scrollTop;
+
+        if (scroll > 58) {
+            sitckynav.classList.add('sticky');
+            content.classList.add('push-3');
+        } else {
+            sitckynav.classList.remove('sticky');
+            content.classList.remove('push-3');
+        }
+
+    })
 
 </script>
 </html>

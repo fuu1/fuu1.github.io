@@ -121,22 +121,28 @@ h3{
 }
 
 .side_bar{
-    position: fixed;
-    right: 0;
-    background-color: #484848;
     height: 100vh;
-    padding: 0;
 }
+.sticky{
+    position: fixed;
+    top: 0;
+}
+
+
 .toc{
     text-align: center;
 }
 .links a{
     color: white;
     font-size: 20px;
-    text-align: right;
 }
 .links li{
     margin-top: 20px;
     text-decoration: none;
     list-style: none;
+}
+
+
+.container-nav{
+    float: right;
 }
