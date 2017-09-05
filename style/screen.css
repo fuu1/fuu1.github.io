@@ -1,12 +1,12 @@
 @charset "UTF-8";
 
 body{
-    color: white ;
-    background-color: #333333;
+    color: black ;
+    background-color:#f1f1f1;
     overflow-x: hidden;
+
 }
 main{
-
     margin: 0 auto;
 }
 
@@ -122,7 +122,7 @@ h3{
 
 .side_bar{
     height: 100vh;
-    background-color: lightgray;
+    background-color: #3F454A;
     transition: 1s ease;
     width: 24%;
     float: left;
@@ -141,9 +141,11 @@ h3{
 
 .toc{
     text-align: center;
+    font-size: 34px;
+    font-weight: 700;
 }
 .links a{
-    color: black;
+    color: white;
     font-size: 20px;
 }
 .links li{
@@ -152,7 +154,34 @@ h3{
     list-style: none;
 }
 
-
+button.close {
+    padding: 11px;
+    cursor: pointer;
+    background: 0 0;
+    border: 0;
+    -webkit-appearance: none
+}
+.close {
+    float: right;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+    color: white;
+    text-shadow: 0 1px 0 black;
+    opacity: .5;
+}
 .container-nav{
     float: right;
+}
+
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid black;
+}
+
+.table td, .table th {
+    padding: .75rem;
+    vertical-align: top;
+    border: 1px solid black;
+    font-size: 18px;
 }
