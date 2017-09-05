@@ -122,18 +122,28 @@ h3{
 
 .side_bar{
     height: 100vh;
+    background-color: lightgray;
+    transition: 1s ease;
+    width: 24%;
+    float: left;
+    position: absolute;
 }
 .sticky{
     position: fixed;
+    width: 24%;
     top: 0;
 }
-
+.main_content{
+    width: 75%;
+    float: right;
+    transition: 1s ease;
+}
 
 .toc{
     text-align: center;
 }
 .links a{
-    color: white;
+    color: black;
     font-size: 20px;
 }
 .links li{

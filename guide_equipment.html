@@ -47,9 +47,12 @@
   </div>
 </nav>
 
-<div class="row">
-<div class="col-md-3 side_bar">
-    <h4 class="toc text-primary">Table of content</h4>
+<div class="side_bar">
+    <h4 class="toc text-primary">
+      <button type="button" class="close close_sidebar" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      Table of content</h4>
     <ul class="links col-md-12">
         <li><a href="#lootable">1- Loot-Table</a></li>
         <li><a href="#enchantgem">2- Enchants/Gems</a></li>
@@ -60,7 +63,7 @@
     </ul>
 </div>
 
-<div class="col-md-9 main_content">
+<div class="main_content">
 
     <div class="py-5 section text-center ">
         <div class="container">
@@ -864,7 +867,7 @@
           </div>
         </div>
       </div>
-</div>
+
 </div>
 </body>
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
@@ -895,14 +898,19 @@
 
         var scroll = document.body.scrollTop;
 
-        if (scroll > 58) {
+        if (scroll > 58 ) {
             sitckynav.classList.add('sticky');
-            content.classList.add('push-3');
         } else {
             sitckynav.classList.remove('sticky');
-            content.classList.remove('push-3');
         }
 
+    });
+
+    var closeside = document.querySelector(".close_sidebar");
+
+    closeside.addEventListener('click', function () {
+        sitckynav.style = "transform: translateX(-105%);";
+        content.style = "width: 100%";
     })
 
 </script>
