@@ -5,9 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
   <link rel="stylesheet" href="style/bootstrap.min.css">
+    <script src="js/wowhead.js"></script>
   <link rel="stylesheet" href="style/screen.css">
   <script src="js/script.js"></script>
-  <script src="js/wowhead.js"></script>
+
   <script src="js/bootstrap.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 </head>
@@ -46,9 +47,8 @@
     </ul>
   </div>
 </nav>
-
+<img src="style/svg/account-login.svg" alt="" class="account">
 <div class="side_bar">
-  <img src="style/svg/account-login.svg" alt="" style="color: white;">
     <h4 class="toc text-primary display-1">
       <button type="button" class="close close_sidebar" aria-label="Close">
         <span aria-hidden="true">&times;</span>
@@ -875,23 +875,9 @@
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
 <script src="https://pingendo.com/assets/bootstrap/bootstrap-4.0.0-alpha.6.min.js"></script>
-<script type="text/javascript">
 
-    // Scroll TO
-
-    $('a[href^="#"]').click(function(){
-        var the_id = $(this).attr("href");
-
-        $('html, body').animate({
-            scrollTop:$(the_id).offset().top
-        }, 'slow');
-        return false;
-    });
-
-</script>
 <script>
     // sticky nav
-
     var sitckynav = document.querySelector('.side_bar');
     var content = document.querySelector('.main_content');
 
@@ -902,17 +888,25 @@
 
         if (scroll > 58 ) {
             sitckynav.classList.add('sticky');
+            openeside.style = "top: 4.6vh;"
+
         } else {
             sitckynav.classList.remove('sticky');
+            openeside.style = "top: 10.6vh;"
         }
 
     });
 
     var closeside = document.querySelector(".close_sidebar");
+    var openeside = document.querySelector(".account");
 
     closeside.addEventListener('click', function () {
         sitckynav.style = "transform: translateX(-105%);";
         content.style = "width: 100%";
+    }) ;
+    openeside.addEventListener('click', function () {
+        sitckynav.style = "transform: translateX(0%);";
+        content.style = "width: 75%";
     })
 
 </script>
