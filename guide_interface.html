@@ -47,6 +47,22 @@
   </div>
 </nav>
 
+<img src="style/svg/account-login.svg" alt="" class="account">
+<div class="side_bar">
+  <h4 class="toc text-primary display-1">
+    <button type="button" class="close close_sidebar" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    Table of content
+  </h4>
+  <ul class="links col-md-12">
+    <li><a href="#macro">1- Macro</a></li>
+    <li><a href="#wa">2- Weak Auras</a></li>
+    <li><a href="#Addons">3- Addons</a></li>
+  </ul>
+</div>
+
+<div class="main_content">
 <div class="py-4 section text-center ">
     <div class="container">
       <div class="row">
@@ -62,12 +78,11 @@
       </div>
     </div>
   </div>
-  <div class="py-4
- ">
+  <div class="py-4">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h1 class="text-primary">Macros:</h1>
+          <h1 class="text-primary" id="macro">Macros:</h1>
           <h3 class="">Shadowstrike Macro:</h3>
           <p class="lead">Uses
             <a href="https://www.wowhead.com/spell=173458">[Backstab]</a> or
@@ -168,7 +183,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h1 class="text-primary">Weakauras:</h1>
+          <h1 class="text-primary" id="wa">Weakauras:</h1>
           <p class="lead">Those are the Weakauras and Weakaura sets i find useful:
             <br>
             <br> </p>
@@ -271,7 +286,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h1 class="text-primary">Addons:</h1>
+          <h1 class="text-primary" id="Addons">Addons:</h1>
           <p class="lead">Addons became the highest quality of life changes that we can get. There are thousands of different addons for every thinkable purpose. Here is a list of addons that might be worth taking a look at:</p>
         </div>
       </div>
@@ -528,10 +543,55 @@
     </div>
   </div>
   <div class="py-4 ">
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
-    <script src="https://pingendo.com/assets/bootstrap/bootstrap-4.0.0-alpha.6.min.js"></script>
-  </div>
-</body>
 
+  </div>
+</div>
+</body>
+<script >
+    $('a[href^="#"]').click(function(){
+        var the_id = $(this).attr("href");
+
+        $('html, body').animate({
+            scrollTop:$(the_id).offset().top
+        }, 'slow');
+        return false;
+    });
+</script>
+<script>
+    // sticky nav
+    var sitckynav = document.querySelector('.side_bar');
+    var content = document.querySelector('.main_content');
+
+
+    document.addEventListener('scroll', function (event) {
+
+        var scroll = document.body.scrollTop;
+
+        if (scroll > 58 ) {
+            sitckynav.classList.add('sticky');
+            openeside.style = "top: 4.6vh;"
+
+        } else {
+            sitckynav.classList.remove('sticky');
+            openeside.style = "top: 10.6vh;"
+        }
+
+    });
+
+    var closeside = document.querySelector(".close_sidebar");
+    var openeside = document.querySelector(".account");
+
+    closeside.addEventListener('click', function () {
+        sitckynav.style = "transform: translateX(-105%);";
+        content.style = "width: 100%";
+    }) ;
+    openeside.addEventListener('click', function () {
+        sitckynav.style = "transform: translateX(0%);";
+        content.style = "width: 75%";
+    })
+
+</script>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+<script src="https://pingendo.com/assets/bootstrap/bootstrap-4.0.0-alpha.6.min.js"></script>
 </html>
