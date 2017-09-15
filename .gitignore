@@ -49,3 +49,7 @@ fabric.properties
 .idea/SubtleGuide.iml
 .idea/inspectionProfiles/
 .idea/modules.xml
+*.xml
+*.xml
+.idea/workspace.xml
+*.xml

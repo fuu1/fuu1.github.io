@@ -47,6 +47,22 @@
   </div>
 </nav>
 
+<img src="style/svg/account-login.svg" alt="" class="account">
+<div class="side_bar">
+  <h4 class="toc text-primary display-1">
+    <button type="button" class="close close_sidebar" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    Table of content
+  </h4>
+  <ul class="links col-md-12">
+    <li><a href="#macro">1- Macro</a></li>
+    <li><a href="#wa">2- Weak Auras</a></li>
+    <li><a href="#Addons">3- Addons</a></li>
+  </ul>
+</div>
+
+<div class="main_content">
 <div class="py-4 section text-center ">
     <div class="container">
       <div class="row">
@@ -62,12 +78,11 @@
       </div>
     </div>
   </div>
-  <div class="py-4
- ">
+  <div class="py-4">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h1 class="text-primary">Macros:</h1>
+          <h1 class="text-primary" id="macro">Macros:</h1>
           <h3 class="">Shadowstrike Macro:</h3>
           <p class="lead">Uses
             <a href="https://www.wowhead.com/spell=173458">[Backstab]</a> or
@@ -76,9 +91,9 @@
 /cast [bonusbar:1] Shadowstrike;Backstab
 </code></pre>
           <h3 class="">Shadowdance Macro:</h3>
-          <p class="lead">[stance:0] prevents you from accidently activating
+          <p class="lead">[stance:0] prevents you from accidentallyactivating
             <a href="https://www.wowhead.com/spell=185422">[Shadow Dance]</a> twice.
-            <br>/cast Shadowstrike prevent you from accidently using
+            <br>/cast Shadowstrike prevents you from accidentally using
             <a href="https://www.wowhead.com/spell=173458">[Backstab]</a> after activating
             <a href="https://www.wowhead.com/spell=185422">[Shadow Dance]</a>.</p>
           <pre class="bg-inverse w-50 text-left"><code>#showtooltipp Shadow Dance
@@ -86,14 +101,14 @@
 /cast Shadowstrike
 </code></pre>
           <p class="lead">You can add this 2 conditions if you want to,
-            <a href="https://www.wowhead.com/item=151190">[Specter of Betrayal]</a> or any other on use trinket is usualy lined up with
+            <a href="https://www.wowhead.com/item=151190">[Specter of Betrayal]</a> or any other on use trinket is usually lined up with
             <a href="https://www.wowhead.com/spell=185422">[Shadow Dance]</a>.
-            <a href="https://www.wowhead.com/spell=212283">[Symbols of Death]</a> gets usualy used pre
-            <a href="https://www.wowhead.com/spell=185422">[Shadow Dance]</a>. This means this condition will never triger but would allow you to use
+            <a href="https://www.wowhead.com/spell=212283">[Symbols of Death]</a> gets usually used pre
+            <a href="https://www.wowhead.com/spell=185422">[Shadow Dance]</a>. This means this condition will never trigger but would allow you to use
             <a href="https://www.wowhead.com/spell=212283">[Symbols of Death]</a> together with
             <a href="https://www.wowhead.com/spell=185422">[Shadow Dance]</a> during the animation.
-            <br>its still recommendet to use 2 macros in case you dont want
-            <a href="https://www.wowhead.com/spell=212283">[Symbols of Death]</a> to line up or if you dont want to use
+            <br>iit's still recommended to use 2 macros in case you don't want
+            <a href="https://www.wowhead.com/spell=212283">[Symbols of Death]</a> to line up or if you don't want to use
             <a href="https://www.wowhead.com/spell=185438">[Shadowstrike]</a>.</p>
           <pre class="bg-inverse w-50 text-left"><code>/cast Symbols of Death
 /use Specter of Betrayal
@@ -111,7 +126,7 @@
 /cast [@Target,talent:7/3] Death from Above; [@mouseover,exists,harm,talent:7/2][@Target,talent:7/2] Marked for Death
 </code></pre>
           <h3 class="">Vanish Macros:</h3>
-          <p class="lead">My personal version of the macro, prevents you from accidently using <a href="https://www.wowhead.com/spell=1856" >[Vanish]</a> when out of combat.</p>
+          <p class="lead">My personal version of the macro, prevents you from accidentally using <a href="https://www.wowhead.com/spell=1856" >[Vanish]</a> when out of combat.</p>
           <pre class="bg-inverse text-left w-75"><code>#showtooltipp Vanish
 /cast [nocombat] Stealth
 /cast [combat] Vanish
@@ -123,15 +138,15 @@
           <pre class="bg-inverse text-left w-75"><code>#showtooltip
 /cast [@mouseover, exists, harm][@Target] Nightblade
 </code></pre>
-          <p class="lead">remove @target if you dont want the macro to only work on mouseover.</p>
+          <p class="lead">remove @target if you don't want the macro to only work on mouseover.</p>
           <h3 class="">Shadowstep Mouseover Macro:</h3>
-          <p class="lead">Its often quite nice to have the option to
+          <p class="lead">It's often quite nice to have the option to
             <a href="https://www.wowhead.com/spell=36563">[Shadowstep]</a> a target via mouseover during a fight.</p>
           <pre class="bg-inverse text-left w-75"><code>#showtooltip
 /cast [@mouseover, exists][@Target] Shadowstep
 </code></pre>
           <h3 class="">Archmage Vargoths - Shadowstep Macro:</h3>
-          <p class="lead">First use places Archmage Vargoths image on the ground. Secound uses
+          <p class="lead">First use places Archmage Vargoths image on the ground. Second uses
             <a href="https://www.wowhead.com/spell=36563">[Shadowstep]</a> on the Image.
             <br>This can be used tactical during raids or mythic plus.</p>
           <pre class="bg-inverse text-left w-75"><code>#showtooltip  Archmage Vargoth's Spare Staff
@@ -140,14 +155,14 @@
 /target Image of Archmage Vargoth
 /cast Shadowstep
 </code></pre>
-          <h3 class="">Itemslot Use Macro:
+          <h3 class="">Item slot Use Macro:
             <br> </h3>
-          <p class="lead">Uses the Itemslot, can be used for Trinkets, Rings or Engineering Enchants.
+          <p class="lead">Uses the Item slot, can be used for Trinkets, Rings or Engineering Enchants.
             <br> </p>
           <pre class="bg-inverse text-left w-75"><code>#showtooltip 6
 /use 6
 </code></pre>
-          <p class="">Itemslots:
+          <p class="">Item slots:
             <br> 1 - Head Slot
             <br>6 - Belt Slot
             <br>11 - Ring Slot 1
@@ -159,7 +174,7 @@
           <p class="lead">
             <a href="https://www.wowhead.com/spell=57934">[Tricks of the Trade]</a> on the Main tank.</p>
           <pre class="bg-inverse text-left w-75"><code>#showtooltip Tricks of the Trade
-/cast [target=Tankname] Tricks of the Trade
+/cast [target=name of tank] Tricks of the Trade
 </code></pre> </div>
       </div>
     </div>
@@ -168,8 +183,8 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h1 class="text-primary">Weakauras:</h1>
-          <p class="lead">Those are the Weakauras and Weakaura sets i find usefull:
+          <h1 class="text-primary" id="wa">Weakauras:</h1>
+          <p class="lead">Those are the Weakauras and Weakaura sets i find useful:
             <br>
             <br> </p>
         </div>
@@ -177,10 +192,10 @@
       <div class="row">
         <div class="col-md-6 text-right">
           <h3 class="text-primary">
-            <a href="https://wago.io/VJMtYLlrG">ShadowTechniques Counter</a>
+            <a href="https://wago.io/VJMtYLlrG">Shadow Techniques Counter</a>
           </h3>
-          <p class="">Numberal counter that helps you predict the
-            <a href="https://www.wowhead.com/spell=196912">[Shadow Techniques]</a> Procs.</p>
+          <p class="">Numeral counter that helps you predict the
+            <a href="https://www.wowhead.com/spell=196912">[Shadow Techniques]</a> procs.</p>
         </div>
         <div class="col-md-6"></div>
       </div>
@@ -209,9 +224,9 @@
           <img class="img-fluid d-block float-right w-25" src="https://media.wago.io/screenshots/NJkH7IB1X/1493984424219-Unbenannt-3.png"> </div>
         <div class="col-md-6">
           <h3 class="text-primary">
-            <a href="https://wago.io/NJkH7IB1X">Shadowdance Charges for the Personal Ressource Frame</a>
+            <a href="https://wago.io/NJkH7IB1X">Shadowdance Charges for the Personal Resource Frame</a>
           </h3>
-          <p class="">Showes
+          <p class="">Shows
             <a href="https://www.wowhead.com/spell=185422">[Shadow Dance]</a> charges/cooldown as a visual bar.</p>
         </div>
       </div>
@@ -260,7 +275,7 @@
           <h3 class="">
             <a href="https://wago.io/VkcUyO8t-">Ipse's Weakaura HUD</a>
           </h3>
-          <p class="">Allin one Weakauras set from Ipse</p>
+          <p class="">All in one Weakauras set from Ipse</p>
         </div>
         <div class="col-md-6">
           <img class="img-fluid d-block float-left w-25" src="http://i.imgur.com/363g8L6.png"> </div>
@@ -271,8 +286,8 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h1 class="text-primary">Addons:</h1>
-          <p class="lead">Addons became the highest quality of life changes that we can get. There are thousends of diffrent addons for every thinkable purpose. Here is a list of addons that might be worth taking a look at:</p>
+          <h1 class="text-primary" id="Addons">Addons:</h1>
+          <p class="lead">Addons became the highest quality of life changes that we can get. There are thousands of different addons for every thinkable purpose. Here is a list of addons that might be worth taking a look at:</p>
         </div>
       </div>
       <div class="row">
@@ -281,7 +296,7 @@
             <thead>
               <tr>
                 <th class="">Addon</th>
-                <th class="">Discription</th>
+                <th class="">Description</th>
               </tr>
             </thead>
             <tbody>
@@ -309,7 +324,7 @@
                 <td>
                   <a href="https://mods.curse.com/addons/wow/tellmewhen">Tellmewhen</a>
                 </td>
-                <td class="">Alternative to Weakauras that uses abit less ressources.</td>
+                <td class="">Alternative to Weakauras that uses a bit less resources.</td>
               </tr>
               <tr>
                 <td>
@@ -339,7 +354,7 @@
                 <td>
                   <a href="https://mods.curse.com/addons/wow/details">Details</a>
                 </td>
-                <td class="">Feautuere ritch Damage Meter thats relative new but already the best choice.</td>
+                <td class="">Feature rich Damage Meter thats relative new but already the best choice.</td>
               </tr>
               <tr>
                 <td class="">
@@ -363,7 +378,7 @@
                 <td>
                   <a href="http://www.wowinterface.com/downloads/fileinfo.php?s=4c6664e74989d4c5a4005fecb471cde0&amp;id=24109">EKPlates</a>
                 </td>
-                <td class="">Alternative Nameplate addon with an intressting style.</td>
+                <td class="">Alternative Nameplate addon with an interesting style.</td>
               </tr>
               <tr>
                 <td class="">
@@ -393,13 +408,13 @@
                 <td>
                   <a href="https://mods.curse.com/addons/wow/iskar-assist">Raid Assist</a>
                 </td>
-                <td class="">Provides alot of features for raid organisation.</td>
+                <td class="">Provides a lot of features for raid organisation.</td>
               </tr>
               <tr>
                 <td>
                   <a href="https://mods.curse.com/addons/wow/rclootcouncil">RCLootCouncil</a>
                 </td>
-                <td class="">The best addon to organice the loot in your raid.</td>
+                <td class="">The best addon to organise the loot in your raid.</td>
               </tr>
               <tr>
                 <td class="">
@@ -483,7 +498,7 @@
                 <td>
                   <a href="https://www.tukui.org/welcome.php">Elv Ui</a>
                 </td>
-                <td class="">Popular Ui replacement with alot of features.</td>
+                <td class="">Popular Ui replacement with a lot of features.</td>
               </tr>
               <tr>
                 <td class="">
@@ -501,7 +516,7 @@
                 <td>
                   <a href="https://mods.curse.com/addons/wow/trufigcd">TrufiGCD</a>
                 </td>
-                <td class="">Provides a timeline for your casts. Intressting for streaming.</td>
+                <td class="">Provides a time line for your casts. Interesting for streaming.</td>
               </tr>
               <tr class="">
                 <td>
@@ -528,10 +543,55 @@
     </div>
   </div>
   <div class="py-4 ">
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
-    <script src="https://pingendo.com/assets/bootstrap/bootstrap-4.0.0-alpha.6.min.js"></script>
-  </div>
-</body>
 
+  </div>
+</div>
+</body>
+<script >
+    $('a[href^="#"]').click(function(){
+        var the_id = $(this).attr("href");
+
+        $('html, body').animate({
+            scrollTop:$(the_id).offset().top
+        }, 'slow');
+        return false;
+    });
+</script>
+<script>
+    // sticky nav
+    var sitckynav = document.querySelector('.side_bar');
+    var content = document.querySelector('.main_content');
+
+
+    document.addEventListener('scroll', function (event) {
+
+        var scroll = document.body.scrollTop;
+
+        if (scroll > 58 ) {
+            sitckynav.classList.add('sticky');
+            openeside.style = "top: 4.6vh;"
+
+        } else {
+            sitckynav.classList.remove('sticky');
+            openeside.style = "top: 10.6vh;"
+        }
+
+    });
+
+    var closeside = document.querySelector(".close_sidebar");
+    var openeside = document.querySelector(".account");
+
+    closeside.addEventListener('click', function () {
+        sitckynav.style = "transform: translateX(-105%);";
+        content.style = "width: 100%";
+    }) ;
+    openeside.addEventListener('click', function () {
+        sitckynav.style = "transform: translateX(0%);";
+        content.style = "width: 75%";
+    })
+
+</script>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+<script src="https://pingendo.com/assets/bootstrap/bootstrap-4.0.0-alpha.6.min.js"></script>
 </html>
