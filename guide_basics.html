@@ -5,9 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
   <link rel="stylesheet" href="style/bootstrap.min.css">
+  <script src="js/wowhead.js"></script>
   <link rel="stylesheet" href="style/screen.css">
   <script src="js/script.js"></script>
-  <script src="js/wowhead.js"></script>
+
   <script src="js/bootstrap.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 </head>
@@ -47,6 +48,27 @@
   </div>
 </nav>
 
+<img src="style/svg/account-login.svg" alt="" class="account">
+<div class="side_bar">
+  <h4 class="toc text-primary display-1">
+    <button type="button" class="close close_sidebar" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    Table of content
+  </h4>
+  <ul class="links col-md-12">
+    <li><a href="#intro">1- Introduction</a></li>
+    <li><a href="#attrib">2- Attirbutes</a></li>
+    <li><a href="#race">3- Race</a></li>
+    <li><a href="#proffesion">4- Profession</a></li>
+    <li><a href="#Position">5- Position</a></li>
+    <li><a href="#ressources">6- Ressources</a></li>
+    <li><a href="#abilityes">7- Abilities</a></li>
+    <li><a href="#Talents">8- Talents</a></li>
+  </ul>
+</div>
+
+<div class="main_content">
 
 <div class="py-5 section text-center ">
     <div class="container">
@@ -69,7 +91,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <h1 class="text-primary">Introduction:</h1>
+          <h1 class="text-primary" id="intro">Introduction:</h1>
           <p class="lead">Subtlety got a lot of changes in 7.2.5 wich opened up a high range of talent choices that impact our cooldown management, playstyle and damage distribution.
             <br>
             <br>The current iteration provides you with regular high burst phases, strong mobility and extremely good soaking capability.
@@ -87,7 +109,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h1 class="text-primary text-left">Attributes:
+          <h1 class="text-primary text-left" id="attrib">Attributes:
             <br> </h1>
           <p class="lead text-left">Attributes are the base values for our character's combat ability.
             <br>We have primary and secondary Attributes. Our primary attributes are Agility and Stamina and our secondary attributes are Critical Strike Rating, Haste, Mastery and Versatility.
@@ -168,7 +190,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h1 class="text-primary text-left">Race:</h1>
+          <h1 class="text-primary text-left" id="race">Race:</h1>
         </div>
       </div>
       <div class="row">
@@ -235,7 +257,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h1 class="text-primary text-left">Professions:</h1>
+          <h1 class="text-primary text-left" id="proffesion">Professions:</h1>
         </div>
       </div>
       <div class="row">
@@ -271,7 +293,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h1 class="text-primary">Position, Range and Hitbox:</h1>
+          <h1 class="text-primary" id="Position">Position, Range and Hitbox:</h1>
         </div>
       </div>
       <div class="row">
@@ -297,7 +319,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h1 class="">Resources:</h1>
+          <h1 id="ressources">Resources:</h1>
           <p class="lead ">Our main resource is Energy. The character has a base amount of 100 energy that regenerates at a rate of 10 energy/second. The regeneration of this resource can be higher with procs such as
             <a href="https://www.wowhead.com/spell=197239">[Energetic Stabbing]</a> or
             <a href="https://www.wowhead.com/spell=196912">[Shadow Techniques]</a> and with points in the secondary attribute haste by the rate of 1/sec with every 10% haste rating.
@@ -320,7 +342,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h1 class="text-primary">Abilities:
+          <h1 class="text-primary" id="abilityes">Abilities:
             <br> </h1>
           <p class="lead">Talents are the base that defines our gameplay. They come in different categories and with different conditions. 
             <br>Passive abilities and Cooldowns enhance our gameplay by providing additional resources, damage amplification or cooldown reduction.
@@ -461,7 +483,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h1 class="text-primary text-left">Talents:
+          <h1 class="text-primary text-left" id="Talents">Talents:
             <br> </h1>
           <p class="lead text-left">Talents, together with legendaries, are the main variable that alter our gameplay.
             <br>Talent selection depends on the fight type, length, and equipped gear. It is recommended to use a simulation to evaluate your choices.
@@ -766,7 +788,52 @@
     </div>
   </div>
 
+</div>
 </body>
+<script >
+    $('a[href^="#"]').click(function(){
+        var the_id = $(this).attr("href");
+
+        $('html, body').animate({
+            scrollTop:$(the_id).offset().top
+        }, 'slow');
+        return false;
+    });
+</script>
+<script>
+    // sticky nav
+    var sitckynav = document.querySelector('.side_bar');
+    var content = document.querySelector('.main_content');
+
+
+    document.addEventListener('scroll', function (event) {
+
+        var scroll = document.body.scrollTop;
+
+        if (scroll > 58 ) {
+            sitckynav.classList.add('sticky');
+            openeside.style = "top: 4.6vh;"
+
+        } else {
+            sitckynav.classList.remove('sticky');
+            openeside.style = "top: 10.6vh;"
+        }
+
+    });
+
+    var closeside = document.querySelector(".close_sidebar");
+    var openeside = document.querySelector(".account");
+
+    closeside.addEventListener('click', function () {
+        sitckynav.style = "transform: translateX(-105%);";
+        content.style = "width: 100%";
+    }) ;
+    openeside.addEventListener('click', function () {
+        sitckynav.style = "transform: translateX(0%);";
+        content.style = "width: 75%";
+    })
+
+</script>
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
 <script src="https://pingendo.com/assets/bootstrap/bootstrap-4.0.0-alpha.6.min.js"></script>
