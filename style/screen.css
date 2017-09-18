@@ -138,6 +138,11 @@ h3{
     float: right;
     transition: 1s ease;
 }
+.main_content2{
+    width: 95%;
+    float: right;
+    transition: 1s ease;
+}
 
 .toc{
     text-align: center;
@@ -207,4 +212,21 @@ button.close {
 
 .q1, .q1 a, .color-q1, .wowhead-tooltip .q1 a {
     color: #3e7ede !important;
+}
+
+.legendary_container{
+    width:90%;
+    margin: 0 auto;
+    transition: 0.8s ease;
+    overflow: hidden;
+}
+.legendaries{
+    width: 100%;
+    float: left;
+    background-color: rebeccapurple;
+    opacity: 0;
+}
+
+.legendaries_visible{
+    opacity: 1;
 }
