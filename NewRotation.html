@@ -169,11 +169,7 @@
 
             <h1>1- Legendary</h1>
             <div class="legendary_container">
-                <div class="legendaries legendaries_visible">
-                    <p>
-                        Please select your legendaries
-                    </p>
-                </div>
+                <p>Select two legendaries !</p>
                 <div class="legendaries shoulders">
                     <p>This is for shoulders
                         <br>
@@ -183,6 +179,48 @@
                 </div>
                 <div class="legendaries gloves">
                     <p>This is for GLOVES
+                        <br>
+                        <br>
+                    aze
+                    </p>
+                </div>
+                <div class="legendaries wrist">
+                    <p>This is for Wrist
+                        <br>
+                        <br>
+                    aze
+                    </p>
+                </div>
+                <div class="legendaries cloak">
+                    <p>This is for Cloak
+                        <br>
+                        <br>
+                    aze
+                    </p>
+                </div>
+                <div class="legendaries insigna">
+                    <p>This is for insigna
+                        <br>
+                        <br>
+                    aze
+                    </p>
+                </div>
+                <div class="legendaries boots">
+                    <p>This is for Boots
+                        <br>
+                        <br>
+                    aze
+                    </p>
+                </div>
+                <div class="legendaries vigorring">
+                    <p>This is for Vigor Ring
+                        <br>
+                        <br>
+                    aze
+                    </p>
+                </div>
+                <div class="legendaries belt">
+                    <p>This is for Belt
                         <br>
                         <br>
                     aze
@@ -199,37 +237,50 @@
 <script >
     var alllegendary = document.querySelectorAll(".input-profil");
     var legendary_info = document.querySelectorAll(".legendaries");
-    var legendary_info_displayed = document.querySelectorAll(".legendaries_visible");
+    var display= [];
 
 
 
 
     for (let i=0 ; i<alllegendary.length ; i++){
         alllegendary[i].addEventListener('click', function () {
-            var checkboxes = document.querySelectorAll('input[type=checkbox]:checked');
 
-            if (alllegendary[i].checked === true){
-                if( checkboxes.length > 2){
-                    alllegendary[i].checked = false
-                }}
-                var HasBeenClicked = alllegendary[i].id;
-            DisplayLegendary(HasBeenClicked)
-        });
+            if (alllegendary[i].checked === true && display.length < 2 ){
+                display.push(alllegendary[i].id);
+
+
+
+            } else if (alllegendary[i].checked === false){
+                var x = display.indexOf(alllegendary[i].id);
+                if(x != -1) {
+                    display.splice(x, 1);
+                }
+
+            } else {
+                alllegendary[i].checked = false
+            }
+            RemoveAll();
+            DisplayLegendary(display);
+            console.log(display);
+    });
     }
 
-function DisplayLegendary(HasBeenClicked) {
-    console.log("function executed", HasBeenClicked);
-    for(let j =0; j<legendary_info.length; j++){
-        if (legendary_info[j].classList.contains(HasBeenClicked)){
-            console.log("progress");
-            legendary_info[j].classList.add("legendaries_visible")
+function DisplayLegendary(display) {
+    for( let i = 0; i<legendary_info.length; i++){
+        for (let f=0; f<display.length; f++){
+            if (legendary_info[i].classList.contains(display[f])){
+                legendary_info[i].classList.add("legendaries_visible")
+            }
         }
     }
+
 }
 
-
-
-
+function RemoveAll() {
+    for( let i = 0; i<legendary_info.length; i++){
+        legendary_info[i].classList.remove("legendaries_visible")
+        }
+}
 
 
 </script>

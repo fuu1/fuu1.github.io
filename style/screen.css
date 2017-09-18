@@ -224,9 +224,9 @@ button.close {
     width: 100%;
     float: left;
     background-color: rebeccapurple;
-    opacity: 0;
+    display: none;
 }
 
 .legendaries_visible{
-    opacity: 1;
+    display: block;
 }
