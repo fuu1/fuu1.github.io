@@ -229,3 +229,10 @@ button.close {
 .legendaries_visible{
     display: block;
 }
+
+.rowt{
+    cursor: pointer;
+}
+.selected{
+    background-color: gold;
+}
