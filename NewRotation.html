@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
     <link rel="stylesheet" href="style/bootstrap.min.css">
+    <script src="js/wowhead.js"></script>
     <link rel="stylesheet" href="style/screen.css">
     <script src="js/script.js"></script>
-    <script src="js/wowhead.js"></script>
+
     <script src="js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 </head>
@@ -26,15 +27,20 @@
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Subtlety
                 </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="guide_basics.html">Basics</a>
-                    <a class="dropdown-item" href="guide_equipment.html">Equipment</a>
-                    <a class="dropdown-item disabled" href="#">Dynamic Gamplay</a>
-                    <a class="dropdown-item" href="guide_dfa.html">Gameplay - DfA</a>
-                    <a class="dropdown-item" href="guide_non_dfa.html">Gameplay - Non DfA</a>
-                    <a class="dropdown-item" href="guide_interface.html">Interface</a>
-                </div>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="guide_basics.html">Basics</a></li>
+                    <li><a class="dropdown-item" href="guide_equipment.html">Equipment</a></li>
+                    <li><a class="dropdown-item" href="NewRotation.html">Dynamic Gamplay</a></li>
+                    <li><a class="dropdown-item" href="guide_dfa.html">Gameplay - DfA</a></li>
+                    <li><a class="dropdown-item" href="guide_non_dfa.html">Gameplay - Non DfA</a></li>
+                    <li><a class="dropdown-item" href="guide_interface.html">Interface</a></li>
+                    <!--<li role="separator" class="divider"></li>-->
+                    <!--<li class="dropdown-header">In-Depth mecanics</li>-->
+                    <!--<li><a class="dropdown-item disabled crossed" href="#">Extra legendary insite</a> </li>-->
+                    <!--<li><a class="dropdown-item disabled crossed" href="#">Shadow Technique</a></li>-->
+                </ul>
             </li>
+
             <li class="nav-item">
                 <a class="nav-link disabled" href="#">About</a>
             </li>
@@ -42,82 +48,83 @@
     </div>
 </nav>
 
-<main>
+<div class="main_content2">
 
-<div class="row">
+        <div class="row">
             <div class="col-md-12">
                 <h1 class="display-1 text-primary">Subtlety Guide</h1>
                 <h1 class="text-primary">Gameplay</h1>
             </div>
         </div>
 
-            <div class="col-md-12">
+            <div class="">
                 <p class="lead">
                     This part of the guide covers the gameplay aspect of the the specification. <br>
                     This is displayed dynamicly, below this there is Talent / Legendary who impact the rotation, select the
                     ones you have and the right information in function of you're case will be displayed.
                 </p>
             </div>
-            <div class="col-md-9 talentcontainer">
-                <h2 class="title2">Taltents :</h2>
-                <div class="row">
-                    <div class="col-md-12">
-                        <p class=""> </p>
+            <div class="row">
+                <!--============= Talents selection==========-->
+                <div class="col-md-8 talentcontainer">
+                    <h2 class="title2">Taltents :</h2>
+                    <div class="row">
                         <div class="col-md-12">
-                            <table class="table">
-
-                                <tbody>
-                                <tr>
-                                    <td class="">15</td>
-                                    <td class="row15"><a href="#" rel="spell=31223"> [Master of Subtlety]</a></td>
-                                    <td class="row15"><a href="#" rel="spell=193537"> [Weaponmaster]</a></td>
-                                    <td class="row15"><a href="#" rel="spell=200758"> [Gloomblade]</a></td>
-                                </tr>
-                                <tr>
-                                    <td class="">30</td>
-                                    <td class="row30"><a href="#" rel="spell=14062"> [Nightstalker]</a></td>
-                                    <td class="row30"><a href="#" rel="spell=108208"> [Subterfuge]</a></td>
-                                    <td class="row30"><a href="#" rel="spell=193537"> [Weaponmaster]</a></td>
-                                </tr>
-                                <tr>
-                                    <td class="">45</td>
-                                    <td class="row45"><a href="#" rel="spell=193531"> [Deeper Stratagem]</a></td>
-                                    <td class="row45"><a href="#" rel="spell=114015"> [Anticipation]</a></td>
-                                    <td class="row45"><a href="#" rel="spell=114015"> [Anticipation]</a></td>
-                                </tr>
-                                <tr>
-                                    <td class="">60</td>
-                                    <td class="row60"><a href="#" rel="spell=200759"> [Soothing Darkness]</a></td>
-                                    <td class="row60"><a href="#" rel="spell=79008"> [Elusiveness]</a></td>
-                                    <td class="row60"><a href="#" rel="spell=31230"> [Cheat Death]</a></td>
-                                </tr>
-                                <tr>
-                                    <td class="">75</td>
-                                    <td class="row75"><a href="#" rel="spell=196951"> [Strike from the Shadows]</a></td>
-                                    <td class="row75"><a href="#" rel="spell=131511"> [Prey on the Weak]</a></td>
-                                    <td class="row75"><a href="#" rel="spell=200778"> [Tangled Shadow]</a></td>
-                                </tr>
-                                <tr>
-                                    <td class="">90</td>
-                                    <td class="row90"><a href="#" rel="spell=245687"> [Dark Shadow]</a></td>
-                                    <td class="row90"><a href="#" rel="spell=193539"> [Alacrity]</a></td>
-                                    <td class="row90"><a href="#" rel="spell=238104"> [Enveloping Shadows]</a></td>
-                                </tr>
-                                <tr>
-                                    <td class="">100</td>
-                                    <td class="row100"><a href="#" rel="spell=196976"> [Master of Shadows]</a></td>
-                                    <td class="row100"><a href="#" rel="spell=137619"> [Marked for Death]</a></td>
-                                    <td class="row100"><a href="#" rel="spell=200778"> [Tangled Shadow]</a></td>
-                                </tr>
-                                </tbody>
-                            </table>
+                            <div class="col-md-12">
+                                <table class="table">
+                                    <tbody class="talent_section">
+                                    <tr>
+                                        <td class="rowparent1">15</td>
+                                        <td class="rowt row-1" id="MasterofSubtlety"><a href="#" rel="spell=31223"> [Master of Subtlety]</a></td>
+                                        <td class="rowt row-1" id="Weaponmaster"><a href="#" rel="spell=193537"> [Weaponmaster]</a></td>
+                                        <td class="rowt row-1" id="Gloomblade"><a href="#" rel="spell=200758"> [Gloomblade]</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="rowparent2">30</td>
+                                        <td class="rowt row-2" id="Nightstalker"><a href="#" rel="spell=14062"> [Nightstalker]</a></td>
+                                        <td class="rowt row-2" id="Subterfuge"><a href="#" rel="spell=108208"> [Subterfuge]</a></td>
+                                        <td class="rowt row-2" id="ShadowFocus"><a href="#" rel="spell=108209">[Shadow Focus]</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="rowparent3">45</td>
+                                        <td class="rowt row-3" id="DeeperStratagem"><a href="#" rel="spell=193531"> [Deeper Stratagem]</a></td>
+                                        <td class="rowt row-3" id="Anticipation"><a href="#" rel="spell=114015"> [Anticipation]</a></td>
+                                        <td class="rowt row-3" id="Vigor"><a href="#" rel="spell=14983">[Vigor]</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="rowparent4">60</td>
+                                        <td class="rowt row-4" id="SoothingDarkness"><a href="#" rel="spell=200759"> [Soothing Darkness]</a></td>
+                                        <td class="rowt row-4" id="Elusiveness"><a href="#" rel="spell=79008"> [Elusiveness]</a></td>
+                                        <td class="rowt row-4" id="CheatDeath"><a href="#" rel="spell=31230"> [Cheat Death]</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="rowparent5">75</td>
+                                        <td class="rowt row-5" id="StrikefromtheShadows"><a href="#" rel="spell=196951"> [Strike from the Shadows]</a></td>
+                                        <td class="rowt row-5" id="PreyontheWeak"><a href="#" rel="spell=131511"> [Prey on the Weak]</a></td>
+                                        <td class="rowt row-5" id="TangledShadow"><a href="#" rel="spell=200778"> [Tangled Shadow]</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="rowparent6">90</td>
+                                        <td class="rowt row-6" id="DarkShadow"><a href="#" rel="spell=245687"> [Dark Shadow]</a></td>
+                                        <td class="rowt row-6" id="Alacrity"><a href="#" rel="spell=193539"> [Alacrity]</a></td>
+                                        <td class="rowt row-6" id="EnvelopingShadows"><a href="#" rel="spell=238104"> [Enveloping Shadows]</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="rowparent7">100</td>
+                                        <td class="rowt row-7" id="MasterofShadows"><a href="#" rel="spell=196976"> [Master of Shadows]</a></td>
+                                        <td class="rowt row-7" id="MarkedforDeath"><a href="#" rel="spell=137619"> [Marked for Death]</a></td>
+                                        <td class="rowt row-7" id="DeathfromAbove"><a href="#" rel="spell=152150"> [Death from Above]</a></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
 
-            <div class="col-md-12 select-box">
+                <!--========== Legendaries selection ========-->
+                <div class="col-md-4 select-box">
                 <h2 class="title2">Legendary :</h2>
                 <div class="form-group">
                     <div>
@@ -130,14 +137,195 @@
                             <input type="checkbox" class="input-profil" name="optradio" id="wrist">
                             <a href="#" rel="item=137100">[Denial of the Half-Giants]</a> <br>
                         </label>
+                        <br>
                         <label class="checkbox-inline label-profil">
                             <input type="checkbox" class="input-profil" name="optradio" id="shoulders">
                             <a href="#" rel="item=144236">[Mantle of the Master Assassin]</a>
                         </label>
+                        <br>
+                        <label class="checkbox-inline label-profil">
+                            <input type="checkbox" class="input-profil" name="optradio" id="vigorring">
+                            <a href="#" rel="item=150936">[Soul of the Shadowblade]</a>
+                        </label>
+                        <br>
+                        <label class="checkbox-inline label-profil">
+                            <input type="checkbox" class="input-profil" name="optradio" id="boots">
+                            <a href="#" rel="item=137032">[Shadow Satyr's Walk]</a>
+                        </label>
+                        <br>
+                        <label class="checkbox-inline label-profil">
+                            <input type="checkbox" class="input-profil" name="optradio" id="cloak">
+                            <a href="#" rel="item=137021">[The Dreadlord's Deceit]</a>
+                        </label>
+                        <br>
+                        <label class="checkbox-inline label-profil">
+                            <input type="checkbox" class="input-profil" name="optradio" id="belt">
+                            <a href="#" rel="item=133976">[Cinidaria, the Symbiote]</a>
+                        </label>
+                        <br>
+                        <label class="checkbox-inline label-profil" for="insigna">
+                            <input type="checkbox" class="input-profil" name="optradio" id="insigna">
+                            <a href="#" rel="item=137049">[Insignia of Ravenholdt]</a>
+                        </label>
                     </div>
                 </div>
             </div>
+            </div>
 
-</main>
+            <h1>1- Legendary</h1>
+            <div class="legendary_container">
+                <p class="legendaries legendaries_visible">Select two legendaries !</p>
+                <div class="legendaries shoulders">
+                    <p>This is for shoulders
+                        <br>
+                        <br>
+                    aze
+                    </p>
+                </div>
+                <div class="legendaries gloves">
+                    <p>This is for GLOVES
+                        <br>
+                        <br>
+                    aze
+                    </p>
+                </div>
+                <div class="legendaries wrist">
+                    <p>This is for Wrist
+                        <br>
+                        <br>
+                    aze
+                    </p>
+                </div>
+                <div class="legendaries cloak">
+                    <p>This is for Cloak
+                        <br>
+                        <br>
+                    aze
+                    </p>
+                </div>
+                <div class="legendaries insigna">
+                    <p>This is for insigna
+                        <br>
+                        <br>
+                    aze
+                    </p>
+                </div>
+                <div class="legendaries boots">
+                    <p>This is for Boots
+                        <br>
+                        <br>
+                    aze
+                    </p>
+                </div>
+                <div class="legendaries vigorring">
+                    <p>This is for Vigor Ring
+                        <br>
+                        <br>
+                    aze
+                    </p>
+                </div>
+                <div class="legendaries belt">
+                    <p>This is for Belt
+                        <br>
+                        <br>
+                    aze
+                    </p>
+                </div>
+            </div>
+            <h2>2- Opener</h2>
+            <h2 >3- Gameplay</h2>
+
+</div>
 </body>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+<script src="https://pingendo.com/assets/bootstrap/bootstrap-4.0.0-alpha.6.min.js"></script>
+<script >
+    var alllegendary = document.querySelectorAll(".input-profil");
+    var legendary_info = document.querySelectorAll(".legendaries");
+    var display= [];
+
+
+
+
+    for (let i=0 ; i<alllegendary.length ; i++){
+        alllegendary[i].addEventListener('click', function () {
+
+            if (alllegendary[i].checked === true && display.length < 2 ){
+                display.push(alllegendary[i].id);
+
+
+
+            } else if (alllegendary[i].checked === false){
+                var x = display.indexOf(alllegendary[i].id);
+                if(x != -1) {
+                    display.splice(x, 1);
+                }
+
+            } else {
+                alllegendary[i].checked = false
+            }
+            RemoveAll();
+            DisplayLegendary(display);
+            console.log(display);
+    });
+    }
+
+function DisplayLegendary(display) {
+    for( let i = 0; i<legendary_info.length; i++){
+        for (let f=0; f<display.length; f++){
+            if (legendary_info[i].classList.contains(display[f])){
+                legendary_info[i].classList.add("legendaries_visible")
+            }
+        }
+    }
+
+}
+
+function RemoveAll() {
+    for( let i = 0; i<legendary_info.length; i++){
+        legendary_info[i].classList.remove("legendaries_visible")
+        }
+}
+
+
+//============Talents============
+
+    var alltalents = document.querySelectorAll(".rowt");
+    var alltalent_container = [];
+    var newarray =[];
+
+    for (let i=0; i<alltalents.length; i++){
+        alltalents[i].addEventListener('click', function () {
+
+            var parent = this.parentNode;
+            var childs= parent.children;
+
+            for (let j=0; j<childs.length; j++){
+                if (childs[j].classList.contains("selected")){
+                    childs[j].classList.remove('selected');
+                    alltalents[i].classList.add('selected');
+                } else {
+                    this.classList.add('selected');
+                }
+
+            }
+            SelectedOnes()
+        })
+    }
+
+    function SelectedOnes() {
+        alltalent_container = [];
+        for (let i=0; i<alltalents.length; i++) {
+            if(alltalents[i].classList.contains('selected') ){
+
+                alltalent_container.push(alltalents[i].id);
+                if (alltalent_container.length > 6){
+                    console.log(alltalent_container)
+                }
+
+            }
+        }
+    }
+</script>
 </html>
